@@ -2,7 +2,7 @@
 
 ## (Windows server 2016 - 80GB Ultra High-IO - Driver 370.28 )
 
-| **3dmark (TimeSpy DX12)** | **3dmark (Frire Strike DX11)** | **Unigine Superposition  (OpenGL 1.1, 1080p medium)** | **Unigine Superposition  (Direct X, 1080p medium)** |                |               |                |       |       |
+| **3dmark (TimeSpy DX12)** | **3dmark (Frire Strike DX11)** | **Unigine Superposition  (OpenGL 1.1, 1080p medium)** | **Unigine Superposition  (Direct X, 1080p medium)** |
 | :------------------------ | :----------------------------- | :---------------------------------------------------- | :-------------------------------------------------- | -------------- | ------------- | -------------- | ----- | ----- |
 | Total Score               | Graphics Score                 | CPU Score                                             | Total Score                                         | Graphics Score | Physics Score | Combined Score | Score | Score |
 | Failed (not enough VRAM)  | Failed                         | Failed                                                | 8606                                                | 10900          | 6723          | 3989           | 1328  | 5634  |
