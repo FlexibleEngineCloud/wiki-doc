@@ -1,3 +1,11 @@
+---
+title: Active Directory Integration
+description: 
+published: true
+date: 2020-06-02T15:20:40.353Z
+tags: 
+---
+
 ## How to interconnect my on premise AD ?
 
 There is 3 recommended solutions :
