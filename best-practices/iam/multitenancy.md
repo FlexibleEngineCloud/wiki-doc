@@ -1,4 +1,11 @@
-!-- TITLE: Cloud Multitenancy -->
+---
+title: multitenancy
+description: 
+published: true
+date: 2020-06-02T13:55:30.169Z
+tags: 
+---
+
 <!-- SUBTITLE: Best practices for Multitenancy on Public Cloud -->
 
 # Multitenancy
