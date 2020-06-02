@@ -2,7 +2,7 @@
 title: Workspace
 description: 
 published: true
-date: 2020-06-02T16:09:15.462Z
+date: 2020-06-02T16:10:20.296Z
 tags: 
 ---
 
@@ -85,9 +85,6 @@ You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=htt
 
 
 
-###  
-
-##  
 
 
 
@@ -110,22 +107,6 @@ You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=htt
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | ![img](![g1_2xlarge_passmark.png](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/g1_2xlarge_passmark.png?raw=true) | ![img](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/g1_2xlarge_specviewperf.png?raw=true) |
 
-###  
-
-
-
-
-
-
-
-
-
-###  
-
-
-
-
-
 
 
 ## g1.4xlarge 16 vCPU 32 GB RAM 1/4 M60 4GB vRAM
@@ -143,13 +124,7 @@ You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=htt
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | ![img](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/g1_4xlarge_passmark.png?raw=true) | ![img](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/g1_4xlarge_specviewperf.png?raw=true) |
 
-###  
 
-##  
-
-
-
-#  
 
 ## g1.4xlarge 16 vCPU 32 GB RAM 1/4 M60 4GB vRAM
 
@@ -165,8 +140,6 @@ You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=htt
 | PassMark Performance Test(OpenCL/ CUDA not supported)        | SPECviewperf 13                                              |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | ![img](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/g1_4xlarge_passmark_w10.png?raw=true) | ![img](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/g1_4xlarge_specviewperf_w10.png?raw=true) |
-
-###  
 
 
 # Workspace Network
