@@ -1,3 +1,11 @@
+---
+title: Workspace
+description: 
+published: true
+date: 2020-06-02T16:09:15.462Z
+tags: 
+---
+
 
 # AD Integration
 ## How to interconnect my on premise AD ?
@@ -58,9 +66,9 @@ You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=htt
 
 # Workspace GPU benchmark
 
-# g1.xlarge 4 vCPU 8 GB RAm 1/8 M60 1GB vRAM
+## g1.xlarge 4 vCPU 8 GB RAm 1/8 M60 1GB vRAM
 
-## (Windows server 2016 - 80GB Ultra High-IO - Driver 370.28 )
+### (Windows server 2016 - 80GB Ultra High-IO - Driver 370.28 )
 
 | **3dmark (TimeSpy DX12)** | **3dmark (Frire Strike DX11)** | **Unigine Superposition  (OpenGL 1.1, 1080p medium)** | **Unigine Superposition  (Direct X, 1080p medium)** |                |               |                |       |       |
 | :------------------------ | :----------------------------- | :---------------------------------------------------- | :-------------------------------------------------- | -------------- | ------------- | -------------- | ----- | ----- |
@@ -87,9 +95,9 @@ You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=htt
 
 
 
-# g1.2xlarge 8 vCPU 16 GB ram 1/8 M60 1GB vRAM
+## g1.2xlarge 8 vCPU 16 GB ram 1/8 M60 1GB vRAM
 
-## (Windows server 2016 - 80GB Ultra High-IO - Driver 370.28)
+### (Windows server 2016 - 80GB Ultra High-IO - Driver 370.28)
 
 | **3dmark (TimeSpy DX12)** | **3dmark (Frire Strike DX11)** | **Unigine Superposition  (OpenGL 1.1, 1080p medium)** | **Unigine Superposition  (Direct X, 1080p medium)** |                |               |                |       |       |
 | :------------------------ | :----------------------------- | :---------------------------------------------------- | :-------------------------------------------------- | -------------- | ------------- | -------------- | ----- | ----- |
@@ -120,9 +128,9 @@ You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=htt
 
 
 
-# g1.4xlarge 16 vCPU 32 GB RAM 1/4 M60 4GB vRAM
+## g1.4xlarge 16 vCPU 32 GB RAM 1/4 M60 4GB vRAM
 
-## (Windows 2016 - 80GB Ultra High-IO - Driver 370.28)
+### (Windows 2016 - 80GB Ultra High-IO - Driver 370.28)
 
 | **3dmark (TimeSpy DX12)** | **3dmark (Frire Strike DX11)** | **Unigine Superposition  (OpenGL 1.1, 1080p medium)** | **Unigine Superposition  (Direct X, 1080p medium)** |                |               |                |       |       |
 | :------------------------ | :----------------------------- | :---------------------------------------------------- | :-------------------------------------------------- | -------------- | ------------- | -------------- | ----- | ----- |
@@ -143,9 +151,9 @@ You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=htt
 
 #  
 
-# g1.4xlarge 16 vCPU 32 GB RAM 1/4 M60 4GB vRAM
+## g1.4xlarge 16 vCPU 32 GB RAM 1/4 M60 4GB vRAM
 
-## (Windows 10 - 500GB Ultra High-IO - Driver 370.28)
+### (Windows 10 - 500GB Ultra High-IO - Driver 370.28)
 
 | **3dmark (TimeSpy DX12)** | **3dmark (Frire Strike DX11)** | **Unigine Superposition  (OpenGL 1.1, 1080p medium)** | **Unigine Superposition  (Direct X, 1080p medium)** |                |               |                |       |       |
 | :------------------------ | :----------------------------- | :---------------------------------------------------- | :-------------------------------------------------- | -------------- | ------------- | -------------- | ----- | ----- |
@@ -210,7 +218,7 @@ Yes, it uses TLS Encryption between servers and client. That why there is no sec
 
 ## How to secure Workspace Network with the others ECS ?
 
-In the creation form of the infrastructure, you can select the VPC and subnets you want to use. You also have a Workspace Security Group that you can manage to control the traffic between Workspace Desktop and other ECS (Figure 1)
+In the creation form of the infrastructure, you can select the VPC and subnets you want to use. You also have a Workspace Security Group that you can manage to control the traffic between Workspace Desktop and other ECS 
 
  
 
@@ -218,6 +226,6 @@ In the creation form of the infrastructure, you can select the VPC and subnets y
 
  
 
-### Workspace security diagram
+
 
 ![img](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/security%20diagram.png?raw=true)
