@@ -1,3 +1,11 @@
+---
+title: Workspace base ecosystem
+description:
+published: true
+date: 2020-06-02T13:55:30.169Z
+tags:
+---
+
 ## Recommended services to deploy a base Workspace ecosystem (Including AD & File Server)
 
 - Active Directory → Centralised directory to permit users login and right management
