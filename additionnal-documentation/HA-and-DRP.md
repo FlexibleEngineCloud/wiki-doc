@@ -1,3 +1,11 @@
+---
+title: High Availability (HA) and Disaster Recovery Plan (DRP) on FE :
+description: What is HA and DRP on Flexible Engine
+published: true
+date: 2020-06-03T08:57:08.911Z
+tags: 
+---
+
 # High Availability (HA) and Disaster Recovery Plan (DRP) on FE :
 
 HA and DRP are often confused in IT, especially on Flexible Engine :
