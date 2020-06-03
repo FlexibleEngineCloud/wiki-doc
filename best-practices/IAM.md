@@ -2,8 +2,8 @@
 title: IAM
 description: 
 published: true
-date: 2020-06-03T14:00:19.284Z
-tags: 
+date: 2020-06-03T14:00:38.227Z
+tags: iam
 ---
 
 # Multitenancy
