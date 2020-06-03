@@ -2,7 +2,7 @@
 title: High Availability (HA) and Disaster Recovery Plan (DRP) on FE :
 description: What is HA and DRP on Flexible Engine
 published: true
-date: 2020-06-03T13:10:20.111Z
+date: 2020-06-03T13:10:33.510Z
 tags: 
 ---
 
@@ -16,7 +16,7 @@ HA and DRP are often confused in IT, especially on Flexible Engine :
 
 HA will answer to a failure of the service by providing a second instance of the service to keep minimum interruption, in every case, HA has to be automatic and is better offered by the software. For some case, HA can also be offered by hardware or 3rd party solution, but consistency can be not warranted. No matter of the location of the second instance, HA is a generic term explaining that you service is fault tolerant to a specific failure case.
 
-## High Availability category : 
+## High Availability category 
 (Check in architecture best practice to know more)
 - AZ HA : HA in the same AZ of nominal (All services used in Flexible Engine are covered by HA in AZ)
 - Multi AZ HA : HA distributed to one or more different AZ of nominal, in the same region
