@@ -2,7 +2,7 @@
 title: Cloud Container Engine
 description: Demos with Cloud Container Engine
 published: true
-date: 2020-06-03T10:15:57.812Z
+date: 2020-06-03T13:08:18.765Z
 tags: 
 ---
 
@@ -17,10 +17,10 @@ Rocket.Chat is a Web Chat Server, developed in JavaScript, using the Meteor full
 ## Prerequisites 
 
 - Web access to Flexible Engine platform (APIs are not used for now)
-- CCE cluster with 2 (or more) nodes. Best practice is to deploy nodes on both AZ (cf. CCE Cluster creation guide: https://docs.prod-cloud-ocb.orange-business.com/en-us/usermanual/cce/en-us_topic_0035200399.htm) 
+- CCE cluster with 2 (or more) nodes. Best practice is to deploy nodes on both AZ (cf. CCE Cluster creation guide: https://docs.prod-cloud-ocb.orange-business.com/en-us/usermanual2/cce/cce_01_0028.html) 
 
 ## Architecture
-The CCE cluster is be deployed on 2 availability zones (AZ) and contains 2 nodes (based on Elastic Cloud Servers (ECS)). 1 instance of rocket.chat and 1 instance of mongoDB database (as mongo is not available aaS for now) will be deployed on nodes (note that it is not the best pratice as there is no data persitence for mongoDB). The point here is to deploy a basic rocket.chat taht can be used for demo or training sessions.
+The CCE cluster is deployed on 2 availability zones (AZ) and contains 2 nodes (based on Elastic Cloud Servers (ECS)). 1 instance of rocket.chat and 1 instance of mongoDB database will be deployed on nodes. Note that it is not the best pratice as there is no data persitence for mongoDB, for production use it is recommended to use aaS solution (Document Database Service), the point here is to deploy a basic rocket.chat thatt can be used for demo or training sessions.
 ![CCE Rocket.chat architecture](https://obs-public-staticfiles.oss.eu-west-0.prod-cloud-ocb.orange-business.com/Wordpress%20CCE%20rocketchat.png)
 ## Services used
 
