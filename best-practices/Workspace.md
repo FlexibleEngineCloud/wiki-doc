@@ -1,3 +1,11 @@
+---
+title: Workspace
+description: 
+published: true
+date: 2020-06-03T13:21:12.762Z
+tags: 
+---
+
 # Active Directory Multi-Domain Infrastructure
 
 As described in the Active Directory Integration part,
@@ -12,9 +20,10 @@ The only way to support it is to deploy 1 project per domain.
 
  
 
-# Here is a sample architecture (source attached)
+## Sample Architecture
 
-![img](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/multi_ad_domain_infra.png?raw=true)
+![multi_ad_domain_infra.png](/uploads/multi_ad_domain_infra.png)
+
 
 
 # Workspace Base Ecosystem
@@ -28,6 +37,6 @@ The only way to support it is to deploy 1 project per domain.
 - Nat gateway → permit internet outbound for AD, File Server and Workspace Desktop without exposing them to internet
 
 ## Architecture Sample for a base workspace ecosystem
-
 ![img](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/workspace_base_ecosystem.png?raw=true)
+
 
