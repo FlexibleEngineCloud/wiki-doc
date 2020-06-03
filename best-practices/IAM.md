@@ -1,23 +1,30 @@
+---
+title: IAM
+description: 
+published: true
+date: 2020-06-03T13:54:56.339Z
+tags: 
+---
 
 # Multitenancy
 ## Terminology 
-* Domain (Openstack) / Account (Flexible Engine) :
+- Domain (Openstack) / Account (Flexible Engine) :
 
 Domains are the highest level abstraction for resources and users in an OpenStack environment. Domain can directly contain users, user groups and projects. If there is no domain, Identity V3 API assumes a default domain named ‘default’. Domains can also be considered as namespaces. Domain names must be unique across all domains. 
 
-* Projects (Openstack & Flexible Engine) / Tenant (deprecated):
+- Projects (Openstack & Flexible Engine) / Tenant (deprecated):
 
 Projects are the second highest abstraction in OpenStack environment. Projects can directly contain user groups or users. Project can also contain resources. Note that, one project can be assigned to at most one domain. 
 
-* User groups (Openstack & Flexible Engine) :
+- User groups (Openstack & Flexible Engine) :
 
 As the name says, user groups are group of users. The advantage of having user groups is that by assigning roles to a user group, all users in the group get permissions of the roles. For example, an user group ‘CS6393’ may contain students in the course. By assigning  roles to ‘CS6393’ all students get access to the permissions of the roles. User group names are not global in OpenStack environment. Group names are unique within the owning domain and a group can be assigned to at most domain. 
 
-* Roles:
+- Roles:
 
 In OpenStack, permissions to do anything is achieved via assignment to roles. Users or user groups  without any role assigned, can do nothing in the OpenStack environment. As in Role Based access Control (RBAC [2]), role contains permission which is a pair of object-type and operation. For example, create object of type VM or network can be considered as a permission. Note that role name are global in OpenStack environment. In other words, no two role can have the same name.
 
-* Users:
+- Users:
 
 Users are the active entity in the OpenStack system who can consume resources. Users are assigned to role to be able to carry on their activity. Users without any role, cannot do anything in the system, though it is possible to have users without any roles assigned to them.
 
@@ -54,9 +61,9 @@ Pros:
 Cons:
 * Users need to added manually to each domains
 * User groups/RBAC need to be created on each domains
-* Reserved instance are on domain level ( domain B of the company can't benefit of unused reserved instances of domain A)
+* Reserved instances are at domain level (company's domain B can't benefit of unused reserved instances of compagny's domain A)
 * External IDP have to be defined for each domains
-* From Creation: custom APIs provided at Cloud Store level
+* Automation: custom APIs provided at Cloud Store level (creation only)
 
 ### Multi-Project architecture
 Pros:
