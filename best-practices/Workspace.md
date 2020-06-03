@@ -2,7 +2,7 @@
 title: Workspace
 description: 
 published: true
-date: 2020-06-03T13:21:12.762Z
+date: 2020-06-03T13:51:41.775Z
 tags: 
 ---
 
@@ -22,8 +22,8 @@ The only way to support it is to deploy 1 project per domain.
 
 ## Sample Architecture
 
-![multi_ad_domain_infra.png](/uploads/multi_ad_domain_infra.png)
 
+---
 
 
 # Workspace Base Ecosystem
