@@ -2,7 +2,7 @@
 title: Cloud Container Engine
 description: Demos with Cloud Container Engine
 published: true
-date: 2020-06-03T10:11:19.845Z
+date: 2020-06-03T10:15:18.711Z
 tags: 
 ---
 
@@ -185,15 +185,15 @@ You can see that Wordpress is now running on 3 containers hosted on 3 CCE nodes 
 
 
 
-# Abstract
+# CI/CD Demo
 This is a guide on how to integrate CCE with Jenkins to set up a CI/CD Demo environment on FlexibleEngine. 
 Target of this documentation should have basic understanding of FlexibleEngine especially the services related to the Demo: 
 VPC, ECS, CCE and how to manage these services such as creating a VPC/Subnet, creating an ECS, logging in to an ECS with SSH, creating an CCE cluster etc. In this documentation it will not describe the details how to do these basic actions on FE and instead just use one short description telling what needs to be done, for those bascis actions you can refer to the online documentation (https://docs.prod-cloud-ocb.orange-business.com/index.html).
 
-# Architecture 
+## Architecture 
 ![archiCICD](https://obs-public-staticfiles.oss.eu-west-0.prod-cloud-ocb.orange-business.com/archiCICD.png)
 
-# Prerequisite 
+## Prerequisite 
 1.	A project in FlexibleEngine and a User in this Project with Console and API access privilege to manage resources (VPC/ ECS/CCE).
 2.	Two VPCs are created, one is VPC-CI, another is VPC-Runtime, and in each VPC a subnet is created.
 VPC-Runtime and subnet-runtime in this VPC
@@ -208,16 +208,16 @@ VPC-CI and subnet-ci in this VPC
 Otherwise, the certificate file is need to be uploaded in order to enable using private container image we are going to build (please follow the guide: https://docs.prod-cloud-ocb.orange-business.com/en-us/doc/pdf/20180530/20180530115106_9d1333530a.pdf: 2.2 Uploading an AK/SK File)
 
 ## Step 1: Installation
-##### 1.	Set up Github Repository
+### 1.	Set up Github Repository
 •	Login to www.github.com, (if you don’t have one account, please register one and login)
 •	Fork a repository from this repository (https://github.com/Karajan-project/hellonode) and set it as Public repository, then you will get your own repository (https://github.com/<your register account>/hellonode) for this demo. (The reason why you need to have your own repository is because you will need to modify the source code to trigger the build project in Jenkins.)
 
-##### 2.	Set up Jenkins and Required Plugins 
+### 2.	Set up Jenkins and Required Plugins 
 
 •	Login to ECS VM-Jenkins with SSH
 •	Install Jenkins
 *Note: JDK is mandatory to run Jenkins, so before installing Jenkins, please install JDK at first.*
-###### Install JDK:
+### Install JDK:
 
 ```batchfile
 sudo add-apt-repository ppa:openjdk-r/ppa
@@ -225,7 +225,7 @@ sudo apt-get update
 sudo apt-get install openjdk-8-jdk
 
 ```
-#### Install Jenkins:
+### Install Jenkins:
 
 ```batchfile
 wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
@@ -238,7 +238,7 @@ sudo apt-get install Jenkins
 
 **Check Point:** enter << http://< External IP Address > :< Port> >> in browser to see if Jenkins is installed successfully and can be accessed normally. When logging in successfully, follow the wizard to initialize Jenkins, then you will go to this page. 
 
-#### Install Jenkins recommended packages
+### Install Jenkins recommended packages
 ![jenkinshome](https://obs-public-staticfiles.oss.eu-west-0.prod-cloud-ocb.orange-business.com/jenkinshome.png)
 On Jenkins webpage “go to plugin manager” and install the following plugins (Refer: https://jenkins.io/doc/book/managing/plugins): 
 * Docker Pipeline
@@ -264,8 +264,8 @@ sudo apt-get install -y docker-ce
 **Check Point**: execute cmd “sudo systemctl status docker” to check if docker is installed successfully with the following similar output:
 ![jenkinshome](https://obs-public-staticfiles.oss.eu-west-0.prod-cloud-ocb.orange-business.com/jenkinscheck.png)
 
-### Step 2: Configure and Create Jenkins Project
-#### Configure Github repository
+## Step 2: Configure and Create Jenkins Project
+### Configure Github repository
 Automatic building: To make sure that the project in Jenkins can be triggered automatically when there is new commit/push to the source code repository. 
 
 Go to settings -> Integration & Services under the new forked project and install the “Jenkins Github plugin”, and the Jenkins hook url should be:
@@ -285,7 +285,7 @@ sudo service jenkins restart
 ```
 #### Create CCE private registry credentials 
 
-**a. **Download a certificate file from Container Registry 
+**a.** Download a certificate file from Container Registry 
 With file name  “dockercfg.txt”
 ![registry](https://obs-public-staticfiles.oss.eu-west-0.prod-cloud-ocb.orange-business.com/CCE-registry.png)
 
@@ -373,7 +373,7 @@ Refer to the following parameters which are needed to be specified
 ![pipelineconf](https://obs-public-staticfiles.oss.eu-west-0.prod-cloud-ocb.orange-business.com/jenkinspipelineconf.png)
 *Note: Replace the Github project and repository address to the Github repository you just forked.*
 
-### 3.	Configure Docker Client 
+#### 3.	Configure Docker Client 
 Add the container registry address (refer to CCE Container Registry console image following) insecure-registries parameter in the /etc/docker/daemon.json file. If not already existing, we have to create daemon.json file.
 
 ```text
@@ -396,7 +396,7 @@ Run the following commands to restart Docker:
 sudo systemctl daemon-reload
 sudo service docker restart
 ```
-### 4.	Modify github repository resource code to adapter your environment
+#### 4.	Modify github repository resource code to adapter your environment
 * 	Jenkinsfile
 Go to your github repository, and edit directly the “Jenkinsfile” file on the web portal or you can edit at your local desktop and then push/commit 
 For the following 4 places:
