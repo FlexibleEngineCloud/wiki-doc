@@ -2,13 +2,13 @@
 title: Workspace
 description: 
 published: true
-date: 2020-06-02T16:10:20.296Z
+date: 2020-06-03T13:14:36.572Z
 tags: 
 ---
 
-
-# AD Integration
-## How to interconnect my on premise AD ?
+# Active Directory
+## AD Integration
+### How to interconnect my on premise AD ?
 
 There is 3 recommended solutions :
 
@@ -16,13 +16,13 @@ There is 3 recommended solutions :
 - Use a FE Direct Connect (with MPLS VPN or other)
 - Create a AD replica in Flexible Engine and replicate the content with from your on premise AD. This solution requires also of the two others solutions, but can be great to reduce external network consumption.
 
-## Multi domain integration
+### Multi domain integration
 
 For today (03/2020), multi domain integration is not supported.
 
 Workaround is to use one project per sub domain
 
-## What about rights needed for the workspace admin ?
+### What about rights needed for the workspace admin ?
 
 Everything is specified in the workspace documentation, but here is a reminder of the account right in case an issue for deleting computers in AD when desktop is deleted (most common) is encountered
 
@@ -30,27 +30,27 @@ Everything is specified in the workspace documentation, but here is a reminder o
 
 
 
-## Why time/date in the master image is very important ?
+### Why time/date in the master image is very important ?
 
 If the time is wrong, you can encounter an issue when you'll deploy a wrong timed images. This will cause a AD join failure.
 
-## Where are my users ?
+### Where are my users ?
 
 You users are not shown in the workspace console, only users with dedicated desktop created will be shown in the users tabs on Workspace Console (a copy of the users informations which have already a desktop is done on the worskpace infrastructure to permit login in case of AD Failure)
 
 
 
-## I want to put my computers in a specific OU ?
+### I want to put my computers in a specific OU ?
 
 You can put the desktop you will create in the OU of your choice, just enter the path to the OU in the case below in the desktop creation form :
 
-## I deployed my computer in the wrong OU, can I have move it
+### I deployed my computer in the wrong OU, can I have move it
 
 Sure, you can move the desktop, then think to reboot it in case you have specific GPO (Group Policy Object) on this new OU.
 
 ![img](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/ou-users.png?raw=true)
 
-## How are named my desktop ?
+### How are named my desktop ?
 
 In the desktop creation process from Workspace console, name of desktop will take the name of users or group (if it is Desktop Pool) with a number, (exemple : tony01, it-group01)
 
@@ -66,9 +66,9 @@ You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=htt
 
 # Workspace GPU benchmark
 
-## g1.xlarge 4 vCPU 8 GB RAm 1/8 M60 1GB vRAM
+### g1.xlarge 4 vCPU 8 GB RAm 1/8 M60 1GB vRAM
 
-### (Windows server 2016 - 80GB Ultra High-IO - Driver 370.28 )
+#### (Windows server 2016 - 80GB Ultra High-IO - Driver 370.28 )
 
 | **3dmark (TimeSpy DX12)** | **3dmark (Frire Strike DX11)** | **Unigine Superposition  (OpenGL 1.1, 1080p medium)** | **Unigine Superposition  (Direct X, 1080p medium)** |                |               |                |       |       |
 | :------------------------ | :----------------------------- | :---------------------------------------------------- | :-------------------------------------------------- | -------------- | ------------- | -------------- | ----- | ----- |
@@ -92,9 +92,9 @@ You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=htt
 
 
 
-## g1.2xlarge 8 vCPU 16 GB ram 1/8 M60 1GB vRAM
+### g1.2xlarge 8 vCPU 16 GB ram 1/8 M60 1GB vRAM
 
-### (Windows server 2016 - 80GB Ultra High-IO - Driver 370.28)
+#### (Windows server 2016 - 80GB Ultra High-IO - Driver 370.28)
 
 | **3dmark (TimeSpy DX12)** | **3dmark (Frire Strike DX11)** | **Unigine Superposition  (OpenGL 1.1, 1080p medium)** | **Unigine Superposition  (Direct X, 1080p medium)** |                |               |                |       |       |
 | :------------------------ | :----------------------------- | :---------------------------------------------------- | :-------------------------------------------------- | -------------- | ------------- | -------------- | ----- | ----- |
@@ -109,9 +109,9 @@ You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=htt
 
 
 
-## g1.4xlarge 16 vCPU 32 GB RAM 1/4 M60 4GB vRAM
+### g1.4xlarge 16 vCPU 32 GB RAM 1/4 M60 4GB vRAM
 
-### (Windows 2016 - 80GB Ultra High-IO - Driver 370.28)
+#### (Windows 2016 - 80GB Ultra High-IO - Driver 370.28)
 
 | **3dmark (TimeSpy DX12)** | **3dmark (Frire Strike DX11)** | **Unigine Superposition  (OpenGL 1.1, 1080p medium)** | **Unigine Superposition  (Direct X, 1080p medium)** |                |               |                |       |       |
 | :------------------------ | :----------------------------- | :---------------------------------------------------- | :-------------------------------------------------- | -------------- | ------------- | -------------- | ----- | ----- |
@@ -126,9 +126,9 @@ You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=htt
 
 
 
-## g1.4xlarge 16 vCPU 32 GB RAM 1/4 M60 4GB vRAM
+### g1.4xlarge 16 vCPU 32 GB RAM 1/4 M60 4GB vRAM
 
-### (Windows 10 - 500GB Ultra High-IO - Driver 370.28)
+#### (Windows 10 - 500GB Ultra High-IO - Driver 370.28)
 
 | **3dmark (TimeSpy DX12)** | **3dmark (Frire Strike DX11)** | **Unigine Superposition  (OpenGL 1.1, 1080p medium)** | **Unigine Superposition  (Direct X, 1080p medium)** |                |               |                |       |       |
 | :------------------------ | :----------------------------- | :---------------------------------------------------- | :-------------------------------------------------- | -------------- | ------------- | -------------- | ----- | ----- |
@@ -143,23 +143,23 @@ You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=htt
 
 
 # Workspace Network
-
-## About "management network"
+## General facts
+### About "management network"
 
 Management network is only used by management server to manage workspace desktop and also capture the audio / video / mouse & keyboard traffic in order to encapsule through the workspace manager to the end user (diagram to come)
 
 In the creation process, take care to not overlap the management network with others subnet you'll use.
 
  
-
-## What is the prerequisite of bandwidth for general desktop ?
+## Network Consumption
+### What is the prerequisite of bandwidth for general desktop ?
 
 - Average bandwidth: 300 kbps/ instance. Peak bandwidth: 5 Mbps/ instance.
 - Packet loss rate ≤ 0.01%
 - Round-trip delay ≤ 30 ms
 - Network Jitter ≤ 10 ms(Floating in the range of ±10ms of average delay)
 
-## What is the prerequisite of bandwidth for GPU Desktop ?
+### What is the prerequisite of bandwidth for GPU Desktop ?
 
 - Max bandwidth: 20 Mbps/ instance
 - Packet loss rate ≤ 0.01%
@@ -169,7 +169,7 @@ In the creation process, take care to not overlap the management network with ot
 
  
 
-## Do you have some example of bandwidth consumption for software ?
+### Do you have some example of bandwidth consumption for software ?
 
 | **Scenario Type**                                 | **Scenario**               | **Bandwidth Reference Value** |
 | ------------------------------------------------- | -------------------------- | ----------------------------- |
@@ -185,11 +185,11 @@ In the creation process, take care to not overlap the management network with ot
 
 
 # Workspace Security
-## The traffic between Workspace and end users is secure ?
+### The traffic between Workspace and end users is secure ?
 
 Yes, it uses TLS Encryption between servers and client. That why there is no security issue to use it through internet. (Figure 1)
 
-## How to secure Workspace Network with the others ECS ?
+### How to secure Workspace Network with the others ECS ?
 
 In the creation form of the infrastructure, you can select the VPC and subnets you want to use. You also have a Workspace Security Group that you can manage to control the traffic between Workspace Desktop and other ECS 
 
