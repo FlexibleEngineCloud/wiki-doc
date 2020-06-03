@@ -2,7 +2,7 @@
 title: Workspace
 description: 
 published: true
-date: 2020-06-03T13:14:36.572Z
+date: 2020-06-03T13:15:22.693Z
 tags: 
 ---
 
@@ -59,8 +59,8 @@ The name can be choose with using API to create desktop
 
 
 # Desktop Private Image
-
-## How to change the public image to French (Keyboard Layout and interface) for all users ?
+## Language
+### How to change the public image to French (Keyboard Layout and interface) for all users ?
 
 You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=https%3A%2F%2Fobs-tony-paris.oss.eu-west-0.prod-cloud-ocb.orange-business.com%2FWorkspace_langue_francaise.pdf) (only in French now)
 
