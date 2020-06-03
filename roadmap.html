@@ -1,0 +1,2088 @@
+<!--
+title: Roadmap
+description: 
+published: true
+date: 2020-06-03T07:52:29.649Z
+tags: 
+-->
+
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:x="urn:schemas-microsoft-com:office:excel"
+      xmlns="http://www.w3.org/TR/REC-html40">
+    <head>
+        <title>Jira</title>
+        <style type="text/css">
+         table {
+             mso-displayed-decimal-separator:"\.";
+             mso-displayed-thousand-separator:"\,";
+         }
+         body
+         {
+             margin: 0px;
+             font-size: 12px;
+             font-family: Arial, sans-serif;
+             color:black;
+         }
+
+        </style>
+        <META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+        <!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+        <!--
+             Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+             since Excel does not use or save the css files it is hardcoded here.
+           -->
+        <style>
+         @page
+         {
+             mso-page-orientation:landscape;
+             margin:.25in .25in .5in .25in;
+             mso-header-margin:.5in;
+             mso-footer-margin:.25in;
+             mso-footer-data:"&R&P of &N";
+             mso-horizontal-page-align:center;
+             mso-vertical-page-align:center;
+         }
+
+         td.issuekey,
+         td.issuetype,
+         td.status {
+             mso-style-parent: "";
+             mso-number-format: \@;
+             text-align: left;
+         }
+         br
+         {
+             mso-data-placement:same-cell;
+         }
+
+         td
+         {
+             vertical-align: top;
+         }
+        </style>
+
+        <!--[if gte mso 9]><xml>
+            <x:ExcelWorkbook>
+            <x:ExcelWorksheets>
+            <x:ExcelWorksheet>
+            <x:Name>general_report</x:Name>
+            <x:WorksheetOptions>
+            <x:Print>
+            <x:ValidPrinterInfo/>
+            </x:Print>
+            </x:WorksheetOptions>
+            </x:ExcelWorksheet>
+            </x:ExcelWorksheets>
+            </x:ExcelWorkbook>
+            </xml><![endif]-->
+    </head>
+    <body>
+
+        <table border="1">
+            <tr bgcolor="#ffffff" height="60">
+                <td colspan="6">
+                    <img src="https://jira.corp.cloudwatt.com/jira-logo-scaled.png" width="60" height="60" border="0" alt="Jira">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <a href="https://jira.corp.cloudwatt.com/issues/?jql=project+%3D+HONEY+AND+issuetype+%3D+Epic+AND+status+in+%28DONE%2C+BUILD%2C+Design%2C+RUN%2C+Think%29+AND+cf%5B12200%5D+%3D+feature+AND+%22Feature+Pack%22+%3D+%22FP%2320.2%22+ORDER+BY+cf%5B12202%5D+ASC%2C+cf%5B11600%5D+ASC">Jira</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    Displaying <strong>104</strong> issues at <strong>03/Jun/20 9:51 AM</strong>.
+                </td>
+            </tr>
+        </table>
+
+        
+
+
+                            <issuetable-web-component>
+                <table id="issuetable"  border="1" cellpadding="3" cellspacing="1" width="100%">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-issuetype" data-id="issuetype">
+                            Issue Type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_12202" data-id="customfield_12202">
+                            Product code
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                            Summary
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                            Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-priority" data-id="priority">
+                            Priority
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10319" data-id="customfield_10319">
+                            Expected date
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow64358" rel="64358" data-issuekey="HONEY-684" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+    </td>
+                                            <td class="summary"><p>
+                [FGS] FunctionGraph Service ( like AWS lambda )
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Aug/20 4:55 PM"><time class="livestamp allow-future" datetime="2020-08-30T16:55:00+0200">30/Aug/20 4:55 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow79692" rel="79692" data-issuekey="HONEY-4998" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (ECS) Elastic Cloud Server
+    </td>
+                                            <td class="summary"><p>
+                [ECS update] support flavor change from xen/KVM to KVM
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Aug/20 4:05 PM"><time class="livestamp allow-future" datetime="2020-08-30T16:05:00+0200">30/Aug/20 4:05 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow80769" rel="80769" data-issuekey="HONEY-5367" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (ECS) Elastic Cloud Server
+    </td>
+                                            <td class="summary"><p>
+                [ECS] new disk-intensive flavors - D3
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/May/20 3:46 PM"><time class="livestamp allow-future" datetime="2020-05-30T15:46:00+0200">30/May/20 3:46 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow71992" rel="71992" data-issuekey="HONEY-2495" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (ECS) Elastic Cloud Server
+    </td>
+                                            <td class="summary"><p>
+                BYOL Windows server licenses for Dedicated compute
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P3-Minor
+    </td>
+                                            <td class="customfield_10319">            <span title="30/May/20 9:44 PM"><time class="livestamp allow-future" datetime="2020-05-30T21:44:00+0200">30/May/20 9:44 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow81878" rel="81878" data-issuekey="HONEY-5789" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (ECS) Elastic Cloud Server
+    </td>
+                                            <td class="summary"><p>
+                [ECS update] new ECS Flavor S6 in AMS region
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="05/Jun/20 3:59 PM"><time class="livestamp allow-future" datetime="2020-06-05T15:59:00+0200">05/Jun/20 3:59 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow80560" rel="80560" data-issuekey="HONEY-5322" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (ECS) Elastic Cloud Server
+    </td>
+                                            <td class="summary"><p>
+                [ECS update][Capacity]new p2s flavor with v100-32GB Nvidia card
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jul/20 11:38 AM"><time class="livestamp allow-future" datetime="2020-07-30T11:38:00+0200">30/Jul/20 11:38 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow60776" rel="60776" data-issuekey="HONEY-105" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (BMS) Bare Metal Server
+    </td>
+                                            <td class="summary"><p>
+                [BMS+ECS] High Performance Computing (Infiniband)
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jun/20 4:53 PM"><time class="livestamp allow-future" datetime="2020-06-30T16:53:00+0200">30/Jun/20 4:53 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow64439" rel="64439" data-issuekey="HONEY-709" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (BMS) Bare Metal Server
+    </td>
+                                            <td class="summary"><p>
+                [BMS] VMware compatible infrastructure based on baremetal
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow72689" rel="72689" data-issuekey="HONEY-2643" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (BMS) Bare Metal Server
+    </td>
+                                            <td class="summary"><p>
+                [BMS] Baremetal s4 to replace o2
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jun/20 5:28 PM"><time class="livestamp allow-future" datetime="2020-06-30T17:28:00+0200">30/Jun/20 5:28 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow69512" rel="69512" data-issuekey="HONEY-1943" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (CSBS) Cloud Server Backup Service
+    </td>
+                                            <td class="summary"><p>
+                [CSBS] CSBS update - support Cross Region Backup replication Feature
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/May/20 6:34 PM"><time class="livestamp allow-future" datetime="2020-05-31T18:34:00+0200">31/May/20 6:34 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow79872" rel="79872" data-issuekey="HONEY-5084" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (CCE) Cloud Container Engine
+    </td>
+                                            <td class="summary"><p>
+                [PAR 3rd AZ - Type C] [CCE] HA option
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jul/20 4:56 PM"><time class="livestamp allow-future" datetime="2020-07-30T16:56:00+0200">30/Jul/20 4:56 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow80592" rel="80592" data-issuekey="HONEY-5336" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (CCE) Cloud Container Engine
+    </td>
+                                            <td class="summary"><p>
+                [CCE] deploy CCE - Amsterdam region
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="28/Aug/20 2:39 PM"><time class="livestamp allow-future" datetime="2020-08-28T14:39:00+0200">28/Aug/20 2:39 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow73730" rel="73730" data-issuekey="HONEY-2905" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (CCE) Cloud Container Engine
+    </td>
+                                            <td class="summary"><p>
+                [CCI] Cloud Containter Instance in Paris
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jul/20 4:42 PM"><time class="livestamp allow-future" datetime="2020-07-30T16:42:00+0200">30/Jul/20 4:42 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow80776" rel="80776" data-issuekey="HONEY-5369" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (CCE) Cloud Container Engine
+    </td>
+                                            <td class="summary"><p>
+                [CCE Update] 0130 (2020) - new k8s 1.15 version &amp; migration feature from k8s 1.11 to 1.13
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jun/20 8:24 AM"><time class="livestamp allow-future" datetime="2020-06-30T08:24:00+0200">30/Jun/20 8:24 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow80458" rel="80458" data-issuekey="HONEY-5289" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (CCE) Cloud Container Engine
+    </td>
+                                            <td class="summary"><p>
+                [CCE MCP] Multi-Cloud Container Platform (MCP) in Paris
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Aug/20 3:35 PM"><time class="livestamp allow-future" datetime="2020-08-30T15:35:00+0200">30/Aug/20 3:35 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow82754" rel="82754" data-issuekey="HONEY-6145" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (CCE) Cloud Container Engine
+    </td>
+                                            <td class="summary"><p>
+                [CCE update] 0530 update - support  k8s 1.17
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow79871" rel="79871" data-issuekey="HONEY-5083" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (IMS) Image Management Service
+    </td>
+                                            <td class="summary"><p>
+                [PAR 3rd AZ - Type C] [IMS] Resiliency over 3 AZ
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow69738" rel="69738" data-issuekey="HONEY-2022" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (IMS) Image Management Service
+    </td>
+                                            <td class="summary"><p>
+                BYOL Licensing for RedHat
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="30/May/20 10:53 AM"><time class="livestamp allow-future" datetime="2020-05-30T10:53:00+0200">30/May/20 10:53 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow78667" rel="78667" data-issuekey="HONEY-4659" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (IMS) Image Management Service
+    </td>
+                                            <td class="summary"><p>
+                [IMS] Support uploading large size image through API in AMS region
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jun/20 4:56 PM"><time class="livestamp allow-future" datetime="2020-06-30T16:56:00+0200">30/Jun/20 4:56 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow69739" rel="69739" data-issuekey="HONEY-2023" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (IMS) Image Management Service
+    </td>
+                                            <td class="summary"><p>
+                BYOL Licensing for Windows 10
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow74235" rel="74235" data-issuekey="HONEY-3060" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Computing
+             - (DeH) Dedicated Host
+    </td>
+                                            <td class="summary"><p>
+                [DeH update] support HA
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P3-Minor
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Apr/20 2:53 PM"><time class="livestamp allow-future" datetime="2020-04-30T14:53:00+0200">30/Apr/20 2:53 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow73950" rel="73950" data-issuekey="HONEY-2982" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Storage
+    </td>
+                                            <td class="summary"><p>
+                [VPC update] VPC flow log for  OVS network Instance
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="15/May/20 11:55 AM"><time class="livestamp allow-future" datetime="2020-05-15T11:55:00+0200">15/May/20 11:55 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow78394" rel="78394" data-issuekey="HONEY-4545" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Storage
+    </td>
+                                            <td class="summary"><p>
+                [CBR] Cloud Backup &amp; Recover in Paris region
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/May/20 9:39 PM"><time class="livestamp allow-future" datetime="2020-05-30T21:39:00+0200">30/May/20 9:39 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow82678" rel="82678" data-issuekey="HONEY-6108" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Storage
+    </td>
+                                            <td class="summary"><p>
+                [CBR] Cloud Backup &amp; Recover in AMS region
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 9:39 PM"><time class="livestamp allow-future" datetime="2020-08-31T21:39:00+0200">31/Aug/20 9:39 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow64229" rel="64229" data-issuekey="HONEY-609" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Storage
+    </td>
+                                            <td class="summary"><p>
+                [DES] Data Express Service
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="29/May/20 2:17 PM"><time class="livestamp allow-future" datetime="2020-05-29T14:17:00+0200">29/May/20 2:17 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow73638" rel="73638" data-issuekey="HONEY-2880" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Storage
+             - (SDRS) Storage Disaster Recovery Service
+    </td>
+                                            <td class="summary"><p>
+                [SDRS update] Support BMS/encrypted volume, DeH etc.
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jun/20 11:56 AM"><time class="livestamp allow-future" datetime="2020-06-30T11:56:00+0200">30/Jun/20 11:56 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow65895" rel="65895" data-issuekey="HONEY-1076" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Storage
+             - (SDRS) Storage Disaster Recovery Service
+    </td>
+                                            <td class="summary"><p>
+                [SDRS update]Improvement of SPOF for Management zone (in PA3) - type B
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P3-Minor
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow79880" rel="79880" data-issuekey="HONEY-5090" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Storage
+             - (SDRS) Storage Disaster Recovery Service
+    </td>
+                                            <td class="summary"><p>
+                [PAR 3rd AZ - Type C] [SDRS] Support 3 AZ resiliency
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P3-Minor
+    </td>
+                                            <td class="customfield_10319">            <span title="30/May/20 6:51 PM"><time class="livestamp allow-future" datetime="2020-05-30T18:51:00+0200">30/May/20 6:51 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow80794" rel="80794" data-issuekey="HONEY-5380" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Storage
+             - (OBS) Object Storage Service
+    </td>
+                                            <td class="summary"><p>
+                [OBS] pre signed URL
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P3-Minor
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Aug/20 12:22 PM"><time class="livestamp allow-future" datetime="2020-08-30T12:22:00+0200">30/Aug/20 12:22 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow77918" rel="77918" data-issuekey="HONEY-4361" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Storage
+             - (OBS) Object Storage Service
+    </td>
+                                            <td class="summary"><p>
+                [TMS upgrade] Support TAG on Object Storage
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Apr/20 11:57 AM"><time class="livestamp allow-future" datetime="2020-04-30T11:57:00+0200">30/Apr/20 11:57 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow64935" rel="64935" data-issuekey="HONEY-834" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Storage
+             - (OBS) Object Storage Service
+    </td>
+                                            <td class="summary"><p>
+                [PAR 3rd AZ - Type C] [OBS] Support OBS Resiliency in 3 AZ
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="10/Jul/20 11:54 AM"><time class="livestamp allow-future" datetime="2020-07-10T11:54:00+0200">10/Jul/20 11:54 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow71820" rel="71820" data-issuekey="HONEY-2435" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Storage
+             - (OBS) Object Storage Service
+    </td>
+                                            <td class="summary"><p>
+                [OBS update] support fine-granted permission on OBS Bucket
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow83619" rel="83619" data-issuekey="HONEY-6354" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Storage
+             - (SFS) Scalable File Service
+    </td>
+                                            <td class="summary"><p>
+                [SFS] SFS in Amsterdam
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 10:08 AM"><time class="livestamp allow-future" datetime="2020-08-31T10:08:00+0200">31/Aug/20 10:08 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow84261" rel="84261" data-issuekey="HONEY-6522" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Storage
+             - (SFS) Scalable File Service
+    </td>
+                                            <td class="summary"><p>
+                [SFS]: SFS turbo encryption
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jun/20 10:29 AM"><time class="livestamp allow-future" datetime="2020-06-30T10:29:00+0200">30/Jun/20 10:29 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow73725" rel="73725" data-issuekey="HONEY-2900" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Storage
+             - (SFS) Scalable File Service
+    </td>
+                                            <td class="summary"><p>
+                [SFS update] support SFS turbo mode
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;RUN&lt;/span&gt;">RUN</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="15/May/20 2:29 PM"><time class="livestamp allow-future" datetime="2020-05-15T14:29:00+0200">15/May/20 2:29 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow69609" rel="69609" data-issuekey="HONEY-1993" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+    </td>
+                                            <td class="summary"><p>
+                [Network] - CDN FE and Akamai co-selling (Day 0)
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 3:24 PM"><time class="livestamp allow-future" datetime="2020-08-31T15:24:00+0200">31/Aug/20 3:24 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow61548" rel="61548" data-issuekey="HONEY-210" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+    </td>
+                                            <td class="summary"><p>
+                [Capacity] Network - FE Paris supports above 50/100 Gbps aggregated throughput
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="15/May/20 12:00 AM"><time class="livestamp allow-future" datetime="2020-05-15T00:00:00+0200">15/May/20 12:00 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow76447" rel="76447" data-issuekey="HONEY-3783" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (VPC) Virtual Private Cloud
+    </td>
+                                            <td class="summary"><p>
+                [Network] Internet pricing evolutions (bandwidth, shared bandwidth and data package)
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 3:05 PM"><time class="livestamp allow-future" datetime="2020-08-31T15:05:00+0200">31/Aug/20 3:05 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow69605" rel="69605" data-issuekey="HONEY-1991" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (VPC) Virtual Private Cloud
+    </td>
+                                            <td class="summary"><p>
+                [Network] FE VPC improvement (VPC with multiple CIDR)
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Aug/20 11:25 AM"><time class="livestamp allow-future" datetime="2020-08-30T11:25:00+0200">30/Aug/20 11:25 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow81912" rel="81912" data-issuekey="HONEY-5802" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (VPC) Virtual Private Cloud
+    </td>
+                                            <td class="summary"><p>
+                [VPCEP] VPC Endpoint in AMS
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 2:31 PM"><time class="livestamp allow-future" datetime="2020-08-31T14:31:00+0200">31/Aug/20 2:31 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow83916" rel="83916" data-issuekey="HONEY-6436" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (ELB) Elastic Load Balance
+    </td>
+                                            <td class="summary"><p>
+                [ELB update] ELB v2 enhancements : enabled keep alive, source ip transferring etc.
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jul/20 11:50 AM"><time class="livestamp allow-future" datetime="2020-07-30T11:50:00+0200">30/Jul/20 11:50 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow67233" rel="67233" data-issuekey="HONEY-1240" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (CONN) Direct Connect
+    </td>
+                                            <td class="summary"><p>
+                Network - Deployment of Equinix Cloud Exchange in ATLANTA
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 6:12 PM"><time class="livestamp allow-future" datetime="2020-08-31T18:12:00+0200">31/Aug/20 6:12 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow83477" rel="83477" data-issuekey="HONEY-6317" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (CONN) Direct Connect
+    </td>
+                                            <td class="summary"><p>
+                [Network] FE Direct Connect Premium: ECX migration to premium model in PARIS
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 7:00 PM"><time class="livestamp allow-future" datetime="2020-08-31T19:00:00+0200">31/Aug/20 7:00 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow69585" rel="69585" data-issuekey="HONEY-1979" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (CONN) Direct Connect
+    </td>
+                                            <td class="summary"><p>
+                [Network] Inter Region Cloud Connect deployment in FE and Huawei Cloud - Paris to Shanghai
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 11:54 AM"><time class="livestamp allow-future" datetime="2020-08-31T11:54:00+0200">31/Aug/20 11:54 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow70162" rel="70162" data-issuekey="HONEY-2185" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (CONN) Direct Connect
+    </td>
+                                            <td class="summary"><p>
+                [Network] Inter Region Cloud Connect deployment in FE - FE PAR to FE AMS
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 8:55 AM"><time class="livestamp allow-future" datetime="2020-08-31T08:55:00+0200">31/Aug/20 8:55 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow69592" rel="69592" data-issuekey="HONEY-1982" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (CONN) Direct Connect
+    </td>
+                                            <td class="summary"><p>
+                [Network] FE Direct Connect Premium: New dedicated connections/New OBS Galerie VPN access - PARIS
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;RUN&lt;/span&gt;">RUN</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="13/Apr/20 9:05 AM"><time class="livestamp allow-future" datetime="2020-04-13T09:05:00+0200">13/Apr/20 9:05 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow78873" rel="78873" data-issuekey="HONEY-4756" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (CONN) Direct Connect
+    </td>
+                                            <td class="summary"><p>
+                [Network] FE Direct Connect Premium: Supports 100 Gbps connection in Paris
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jul/20 9:05 AM"><time class="livestamp allow-future" datetime="2020-07-30T09:05:00+0200">30/Jul/20 9:05 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow79843" rel="79843" data-issuekey="HONEY-5066" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (CONN) Direct Connect
+    </td>
+                                            <td class="summary"><p>
+                [Network] SD WAN Cisco Meraki Access to Flexible Engine
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 7:00 PM"><time class="livestamp allow-future" datetime="2020-08-31T19:00:00+0200">31/Aug/20 7:00 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow79834" rel="79834" data-issuekey="HONEY-5062" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (CONN) Direct Connect
+    </td>
+                                            <td class="summary"><p>
+                [Network] FE Direct Connect Premium: OBS Galerie VPN legacy to premium model migration in PAR
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 7:00 PM"><time class="livestamp allow-future" datetime="2020-08-31T19:00:00+0200">31/Aug/20 7:00 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow84540" rel="84540" data-issuekey="HONEY-6642" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (CONN) Direct Connect
+    </td>
+                                            <td class="summary"><p>
+                [Network] SD WAN Velocloud Access to Flexible Engine
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Jul/20 7:00 PM"><time class="livestamp allow-future" datetime="2020-07-31T19:00:00+0200">31/Jul/20 7:00 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow79833" rel="79833" data-issuekey="HONEY-5061" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (CONN) Direct Connect
+    </td>
+                                            <td class="summary"><p>
+                [Network] FE Direct Connect Premium - Deployment in AMS (AM6) and migration to the premium model
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jun/20 7:00 PM"><time class="livestamp allow-future" datetime="2020-06-30T19:00:00+0200">30/Jun/20 7:00 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow83806" rel="83806" data-issuekey="HONEY-6405" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Network
+             - (CONN) Direct Connect
+    </td>
+                                            <td class="summary"><p>
+                [Network] FE Direct Connect Premium enhancements version 2
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 9:05 AM"><time class="livestamp allow-future" datetime="2020-08-31T09:05:00+0200">31/Aug/20 9:05 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow83778" rel="83778" data-issuekey="HONEY-6391" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Security
+    </td>
+                                            <td class="summary"><p>
+                [HSS] Host Security Service
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 11:06 AM"><time class="livestamp allow-future" datetime="2020-08-31T11:06:00+0200">31/Aug/20 11:06 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow80854" rel="80854" data-issuekey="HONEY-5405" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Security
+             - (DDoS) Anti-DDoS
+    </td>
+                                            <td class="summary"><p>
+                [AntiDDoS]: CleanPipe for Enduser
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="29/May/20 2:30 PM"><time class="livestamp allow-future" datetime="2020-05-29T14:30:00+0200">29/May/20 2:30 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow82896" rel="82896" data-issuekey="HONEY-6174" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Security
+             - (DDoS) Anti-DDoS
+    </td>
+                                            <td class="summary"><p>
+                [Anti DDos update]: Anti DDoS alarms sent through SMN
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow72849" rel="72849" data-issuekey="HONEY-2680" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Security
+             - (KMS) Key Management Service
+    </td>
+                                            <td class="summary"><p>
+                [KMS update] support key rotation and import customer&#39;s keys
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;RUN&lt;/span&gt;">RUN</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Mar/20 11:55 AM"><time class="livestamp allow-future" datetime="2020-03-31T11:55:00+0200">31/Mar/20 11:55 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow73852" rel="73852" data-issuekey="HONEY-2953" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Security
+             - (KMS) Key Management Service
+    </td>
+                                            <td class="summary"><p>
+                [KMS update] support RBAC on key and precise notification on key operation
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="17/Apr/20 11:56 AM"><time class="livestamp allow-future" datetime="2020-04-17T11:56:00+0200">17/Apr/20 11:56 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow80372" rel="80372" data-issuekey="HONEY-5249" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Security
+             - (KMS) Key Management Service
+    </td>
+                                            <td class="summary"><p>
+                [KMS] Implementation/services encryption support in Amsterdam / DR site
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="28/Aug/20 2:38 PM"><time class="livestamp allow-future" datetime="2020-08-28T14:38:00+0200">28/Aug/20 2:38 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow79823" rel="79823" data-issuekey="HONEY-5052" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Security
+             - (KMS) Key Management Service
+    </td>
+                                            <td class="summary"><p>
+                KMS and storage encryption in Atlanta
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow76620" rel="76620" data-issuekey="HONEY-3859" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Security
+             - (WAF) Web Application Firewall
+    </td>
+                                            <td class="summary"><p>
+                [WAF]WAF as a Service from HUAWEI for Paris region
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="15/Jul/20 12:06 PM"><time class="livestamp allow-future" datetime="2020-07-15T12:06:00+0200">15/Jul/20 12:06 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow74252" rel="74252" data-issuekey="HONEY-3066" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Database
+             - (RDS) Relational Database Service
+    </td>
+                                            <td class="summary"><p>
+                [RDS update] Migration XEN to KVM
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 9:18 PM"><time class="livestamp allow-future" datetime="2020-08-31T21:18:00+0200">31/Aug/20 9:18 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow80540" rel="80540" data-issuekey="HONEY-5318" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Database
+             - (RDS) Relational Database Service
+    </td>
+                                            <td class="summary"><p>
+                [RDS update] RDS 330 update - support SQLServer 2017, orafce plugin, MySQL8 upgrade, etc.
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="29/May/20 3:00 PM"><time class="livestamp allow-future" datetime="2020-05-29T15:00:00+0200">29/May/20 3:00 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow69601" rel="69601" data-issuekey="HONEY-1987" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Database
+             - (RDS) Relational Database Service
+    </td>
+                                            <td class="summary"><p>
+                [DAS] Data Admin Service
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P3-Minor
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow76862" rel="76862" data-issuekey="HONEY-3916" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Database
+             - (RDS) Relational Database Service
+    </td>
+                                            <td class="summary"><p>
+                [RDS update] KMS encryption for RDS block storage
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow79320" rel="79320" data-issuekey="HONEY-4902" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Database
+             - (DDS) Document Database Service
+    </td>
+                                            <td class="summary"><p>
+                [GeminiDB] Huawei DocumentDB - GeminiDB
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Jul/20 9:08 PM"><time class="livestamp allow-future" datetime="2020-07-31T21:08:00+0200">31/Jul/20 9:08 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow69600" rel="69600" data-issuekey="HONEY-1986" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Database
+             - (DRS) Data Replication Service
+    </td>
+                                            <td class="summary"><p>
+                [DRS] Data Replication Service for MySQL/PostgreSQL in Paris region
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="28/Aug/20 11:44 AM"><time class="livestamp allow-future" datetime="2020-08-28T11:44:00+0200">28/Aug/20 11:44 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow82173" rel="82173" data-issuekey="HONEY-5938" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Management &amp; Deployment
+    </td>
+                                            <td class="summary"><p>
+                [AOM update in Service Stage] update 0330 - support local ECS/BMS log
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow79862" rel="79862" data-issuekey="HONEY-5074" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Management &amp; Deployment
+             - (CTS) Cloud Trace Service
+    </td>
+                                            <td class="summary"><p>
+                [PAR 3rd AZ - Type B][CTS] 3rd AZ support and resiliency
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow81236" rel="81236" data-issuekey="HONEY-5548" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Management &amp; Deployment
+             - (EYE) Cloud Eye
+    </td>
+                                            <td class="summary"><p>
+                [PAR 3rd AZ - Type B][CES] 3rd AZ support and resiliency
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow78062" rel="78062" data-issuekey="HONEY-4425" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Management &amp; Deployment
+             - (EYE) Cloud Eye
+    </td>
+                                            <td class="summary"><p>
+                [CES update] 0228 update - key Event Notification/OBS 3AZ monitoring
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/May/20 9:36 PM"><time class="livestamp allow-future" datetime="2020-05-30T21:36:00+0200">30/May/20 9:36 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow79999" rel="79999" data-issuekey="HONEY-5131" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Management &amp; Deployment
+             - (IAM) Identity and Access Management
+    </td>
+                                            <td class="summary"><p>
+                [IAM update] OIDC support for Connecting to FE
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Aug/20 3:19 PM"><time class="livestamp allow-future" datetime="2020-08-30T15:19:00+0200">30/Aug/20 3:19 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow81040" rel="81040" data-issuekey="HONEY-5487" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Management &amp; Deployment
+             - (IAM) Identity and Access Management
+    </td>
+                                            <td class="summary"><p>
+                [IAM update] support fine-grained policy v1
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Aug/20 9:25 PM"><time class="livestamp allow-future" datetime="2020-08-30T21:25:00+0200">30/Aug/20 9:25 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow83159" rel="83159" data-issuekey="HONEY-6257" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Management &amp; Deployment
+             - (IAM) Identity and Access Management
+    </td>
+                                            <td class="summary"><p>
+                [IAM update] Provide logs on Failed attempt to log to the Service
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jul/20 3:04 PM"><time class="livestamp allow-future" datetime="2020-07-30T15:04:00+0200">30/Jul/20 3:04 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow81190" rel="81190" data-issuekey="HONEY-5543" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Application
+             - (DCS) Distributed Cache Service
+    </td>
+                                            <td class="summary"><p>
+                [DCS update] upgrade Redis to 4.x/5.x - Amsterdam region
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="28/Aug/20 9:27 PM"><time class="livestamp allow-future" datetime="2020-08-28T21:27:00+0200">28/Aug/20 9:27 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow74793" rel="74793" data-issuekey="HONEY-3255" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Application
+             - (DCS) Distributed Cache Service
+    </td>
+                                            <td class="summary"><p>
+                [PAR 3rd AZ - Type C][DCS] HA cross 3 AZ
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;DONE&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;Deployed in Production&lt;/span&gt;">DONE</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="04/May/20 4:21 PM"><time class="livestamp allow-future" datetime="2020-05-04T16:21:00+0200">04/May/20 4:21 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow82682" rel="82682" data-issuekey="HONEY-6112" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Application
+             - (DMS) Distributed Message Service
+    </td>
+                                            <td class="summary"><p>
+                [DMS] DMS kafka for AMS region
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 9:34 PM"><time class="livestamp allow-future" datetime="2020-08-31T21:34:00+0200">31/Aug/20 9:34 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow75770" rel="75770" data-issuekey="HONEY-3508" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Application
+             - (DMS) Distributed Message Service
+    </td>
+                                            <td class="summary"><p>
+                [DMS]DMS RabbitMQ Service
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 9:30 PM"><time class="livestamp allow-future" datetime="2020-08-31T21:30:00+0200">31/Aug/20 9:30 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow72403" rel="72403" data-issuekey="HONEY-2595" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Application
+             - (DMS) Distributed Message Service
+    </td>
+                                            <td class="summary"><p>
+                [DMS] DMS kafka in Paris region
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jun/20 9:34 PM"><time class="livestamp allow-future" datetime="2020-06-30T21:34:00+0200">30/Jun/20 9:34 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow79868" rel="79868" data-issuekey="HONEY-5080" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Application
+             - (SMN) Simple Message Notification
+    </td>
+                                            <td class="summary"><p>
+                [PAR 3rd AZ - Type B][SMN] 3rd AZ support and resiliency
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P3-Minor
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow82630" rel="82630" data-issuekey="HONEY-6069" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Application
+             - (APIGW) API Gateway
+    </td>
+                                            <td class="summary"><p>
+                [APIGW update] Support customize self-define error code, etc.
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Jun/20 3:20 PM"><time class="livestamp allow-future" datetime="2020-06-30T15:20:00+0200">30/Jun/20 3:20 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow84076" rel="84076" data-issuekey="HONEY-6483" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Data Analysis
+             - (MRS) MapReduce Service
+    </td>
+                                            <td class="summary"><p>
+                [MRS update] 0x30 update - support Presto/Flink/Impala/Kudu components
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Aug/20 2:51 PM"><time class="livestamp allow-future" datetime="2020-08-30T14:51:00+0200">30/Aug/20 2:51 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow79869" rel="79869" data-issuekey="HONEY-5081" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Enterprise Application
+             - (WKS) Workspace
+    </td>
+                                            <td class="summary"><p>
+                [PAR 3rd AZ - Type B][Workspace] resiliency
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P3-Minor
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow77664" rel="77664" data-issuekey="HONEY-4241" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Enterprise Application
+             - (WKS) Workspace
+    </td>
+                                            <td class="summary"><p>
+                [Workspace] Desktop Creation Default Language
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P3-Minor
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow77433" rel="77433" data-issuekey="HONEY-4157" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Enterprise Application
+             - (WKS) Workspace
+    </td>
+                                            <td class="summary"><p>
+                [Workspace] Support Desktop to Change OS and Reinstall OS
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/May/20 11:57 AM"><time class="livestamp allow-future" datetime="2020-05-30T11:57:00+0200">30/May/20 11:57 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow77663" rel="77663" data-issuekey="HONEY-4240" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Enterprise Application
+             - (WKS) Workspace
+    </td>
+                                            <td class="summary"><p>
+                [Workspace] support integration with Cloud Eye (CES)
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow77665" rel="77665" data-issuekey="HONEY-4242" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Enterprise Application
+             - (WKS) Workspace
+    </td>
+                                            <td class="summary"><p>
+                [Workspace] update 0228 - support DeH, 50 pool desktops etc.
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/May/20 6:06 PM"><time class="livestamp allow-future" datetime="2020-05-30T18:06:00+0200">30/May/20 6:06 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow81185" rel="81185" data-issuekey="HONEY-5539" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Enterprise Application
+             - (MKP) Marketplace
+    </td>
+                                            <td class="summary"><p>
+                [Marketplace] placeholder for software for INDUSTRY vertical
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 3:24 PM"><time class="livestamp allow-future" datetime="2020-08-31T15:24:00+0200">31/Aug/20 3:24 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow81184" rel="81184" data-issuekey="HONEY-5538" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Enterprise Application
+             - (MKP) Marketplace
+    </td>
+                                            <td class="summary"><p>
+                [Marketplace] placeholder for software for INTERNET vertical
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 3:24 PM"><time class="livestamp allow-future" datetime="2020-08-31T15:24:00+0200">31/Aug/20 3:24 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow73295" rel="73295" data-issuekey="HONEY-2807" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Enterprise Application
+             - (MKP) Marketplace
+    </td>
+                                            <td class="summary"><p>
+                [Marketplace] Riverbed SteelConnect CX Appliance
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="28/Aug/20 12:00 AM"><time class="livestamp allow-future" datetime="2020-08-28T00:00:00+0200">28/Aug/20 12:00 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow82347" rel="82347" data-issuekey="HONEY-5987" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Enterprise Application
+             - (MKP) Marketplace
+    </td>
+                                            <td class="summary"><p>
+                [MarketPlace] pfSense
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;RUN&lt;/span&gt;">RUN</span>    </td>
+                                            <td class="priority">           P3-Minor
+    </td>
+                                            <td class="customfield_10319">            <span title="08/May/20 10:03 AM"><time class="livestamp allow-future" datetime="2020-05-08T10:03:00+0200">08/May/20 10:03 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow74375" rel="74375" data-issuekey="HONEY-3118" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Enterprise Application
+             - (MKP) Marketplace
+    </td>
+                                            <td class="summary"><p>
+                [MarketPlace] Veeam Office 365 backup
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="26/Jun/20 10:03 AM"><time class="livestamp allow-future" datetime="2020-06-26T10:03:00+0200">26/Jun/20 10:03 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow75299" rel="75299" data-issuekey="HONEY-3366" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Enterprise Application
+             - (MKP) Marketplace
+    </td>
+                                            <td class="summary"><p>
+                [MarketPlace] Veeam backup
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="26/Jun/20 10:03 AM"><time class="livestamp allow-future" datetime="2020-06-26T10:03:00+0200">26/Jun/20 10:03 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow76588" rel="76588" data-issuekey="HONEY-3848" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Enterprise Application
+             - (MKP) Marketplace
+    </td>
+                                            <td class="summary"><p>
+                [MarketPlace] Arcserve Backup + DR
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="28/Aug/20 10:03 AM"><time class="livestamp allow-future" datetime="2020-08-28T10:03:00+0200">28/Aug/20 10:03 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow81186" rel="81186" data-issuekey="HONEY-5540" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Enterprise Application
+             - (MKP) Marketplace
+    </td>
+                                            <td class="summary"><p>
+                [Marketplace] UiPath Process Automation
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 3:24 PM"><time class="livestamp allow-future" datetime="2020-08-31T15:24:00+0200">31/Aug/20 3:24 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow81493" rel="81493" data-issuekey="HONEY-5614" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Enterprise Application
+             - (MKP) Marketplace
+    </td>
+                                            <td class="summary"><p>
+                [Marketplace] Use-IT-Cloud CMP
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 3:24 PM"><time class="livestamp allow-future" datetime="2020-08-31T15:24:00+0200">31/Aug/20 3:24 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow80761" rel="80761" data-issuekey="HONEY-5364" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    EI Entreprise Intelligence
+    </td>
+                                            <td class="summary"><p>
+                [IEF] Intelligent Edge Fabric
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Aug/20 3:16 PM"><time class="livestamp allow-future" datetime="2020-08-30T15:16:00+0200">30/Aug/20 3:16 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow72133" rel="72133" data-issuekey="HONEY-2534" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    EI Entreprise Intelligence
+    </td>
+                                            <td class="summary"><p>
+                [EI] ModelArts Service 
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Design&lt;/span&gt;">Design</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Aug/20 3:35 PM"><time class="livestamp allow-future" datetime="2020-08-30T15:35:00+0200">30/Aug/20 3:35 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow64352" rel="64352" data-issuekey="HONEY-678" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    EI Entreprise Intelligence
+             - (CSS) Cloud Search Service
+    </td>
+                                            <td class="summary"><p>
+                [CSS] Cloud Search Service (Elastic Search aaS)
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="15/Jun/20 11:53 AM"><time class="livestamp allow-future" datetime="2020-06-15T11:53:00+0200">15/Jun/20 11:53 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow80470" rel="80470" data-issuekey="HONEY-5291" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Transversal
+    </td>
+                                            <td class="summary"><p>
+                [Cloud Alliance] Opening AMS in Huawei Cloud/Intl
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="31/Aug/20 9:56 PM"><time class="livestamp allow-future" datetime="2020-08-31T21:56:00+0200">31/Aug/20 9:56 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow75528" rel="75528" data-issuekey="HONEY-3442" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Transversal
+    </td>
+                                            <td class="summary"><p>
+                [HCSO] Flexible Engine Stack (Opex)
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Aug/20 11:46 AM"><time class="livestamp allow-future" datetime="2020-08-30T11:46:00+0200">30/Aug/20 11:46 AM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow74752" rel="74752" data-issuekey="HONEY-3233" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Transversal
+    </td>
+                                            <td class="summary"><p>
+                [HCSO] Flexible Engine Pack (Capex)
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Think&lt;/span&gt;">Think</span>    </td>
+                                            <td class="priority">           P2-Major
+    </td>
+                                            <td class="customfield_10319">            <span title="30/Aug/20 5:35 PM"><time class="livestamp allow-future" datetime="2020-08-30T17:35:00+0200">30/Aug/20 5:35 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow73498" rel="73498" data-issuekey="HONEY-2855" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Transversal
+    </td>
+                                            <td class="summary"><p>
+                IaaS Service Openstack 2019/0530 Version Upgrade 
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+
+
+                <tr id="issuerow74422" rel="74422" data-issuekey="HONEY-3137" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Transversal
+             - Console
+    </td>
+                                            <td class="summary"><p>
+                [CxUx] FE console in French
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319">            <span title="30/May/20 4:11 PM"><time class="livestamp allow-future" datetime="2020-05-30T16:11:00+0200">30/May/20 4:11 PM</time></span>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow72323" rel="72323" data-issuekey="HONEY-2572" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="customfield_12202">    Transversal
+             - Console
+    </td>
+                                            <td class="summary"><p>
+                [PAR 3rd AZ - Type B][Console-API] API/Console management SPOF removal
+    </p>
+</td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;BUILD&lt;/span&gt;">BUILD</span>    </td>
+                                            <td class="priority">           P1-Critical
+    </td>
+                                            <td class="customfield_10319"></td>
+                    </tr>
+                </tbody>
+    </table>
+    </issuetable-web-component>
+    <div class="end-of-stable-message"></div>
+            <table border="1" >
+<tr>
+    <td bgcolor="#f5f5f5" colspan="6"><font size="1">
+        Generated at Wed Jun 03 07:51:57 GMT 2020 by Antonin Anchisi - OCB/SME using Jira 8.7.1#807001-sha1:03e3702defc755fa4d5476f90791e76696be4d38.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>
