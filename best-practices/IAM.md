@@ -2,7 +2,7 @@
 title: IAM
 description: 
 published: true
-date: 2020-06-03T13:54:56.339Z
+date: 2020-06-03T14:00:19.284Z
 tags: 
 ---
 
@@ -43,7 +43,7 @@ With domains, a cloud customer can be the owner of the domain. They can then cre
 
 ## Global diagram 
  
-![Multitenancy Os](https://obs-public-staticfiles.oss.eu-west-0.prod-cloud-ocb.orange-business.com/multitenancy-os.png "Multitenancy Os")
+![Multitenancy Os](https://obs-public-staticfiles.oss.eu-west-0.prod-cloud-ocb.orange-business.com/multitenancyDiagram.png "Multitenancy Os")
 Domains and the Domain administrator, need to be created by what is termed the ‘The Cloud Administrator’. He can have access to Domain resources but this is not mandatory.
 Each domain will then have its own top level Domain Administrator, with that administrator having rights to perform the following actions:
                 * Create/Update Projects within their Domain
