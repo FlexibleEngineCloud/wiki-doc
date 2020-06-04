@@ -2,7 +2,7 @@
 title: Security
 description: Security related additionnal documentation
 published: true
-date: 2020-06-04T15:51:58.497Z
+date: 2020-06-04T15:56:44.813Z
 tags: 
 ---
 
@@ -14,10 +14,11 @@ This solution is included for every customers
 
 ### Case of an attack targeting the platform
 
-![antiddos-solution-on-fe-OCD Cleanpipe Antiddos.png](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/antiddos-solution-on-fe-Default%20Antiddos%20EIP.png?raw=true)
+![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/antiddos-solution-on-fe-Default%20Antiddos%20Platform.png?raw=true)
+
 
 ### Case of an attack targeting customer EIP
-![antiddos-solution-on-fe-Default Antiddos EIP.png](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/antiddos-solution-on-fe-Default%20Antiddos%20EIP.png?raw=true)
+![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/antiddos-solution-on-fe-Default%20Antiddos%20EIP.png?raw=true)
 
 ## Self Service Anti-DDoS Solution 
 Available directly from console, you can enable and configure the feature. After that, automatic remedation will be operated but it can handle only low or mid size attack (few Gbps). If the attack is upper this limit, the default Anti-DDoS Solution will be applied.
