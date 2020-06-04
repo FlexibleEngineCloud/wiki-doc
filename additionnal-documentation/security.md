@@ -2,7 +2,7 @@
 title: Security
 description: Security related additionnal documentation
 published: true
-date: 2020-06-04T15:36:41.352Z
+date: 2020-06-04T15:51:58.497Z
 tags: 
 ---
 
@@ -14,7 +14,7 @@ This solution is included for every customers
 
 ### Case of an attack targeting the platform
 
-![antiddos-solution-on-fe-OCD Cleanpipe Antiddos.png](https://raw.githubusercontent.com/FlexibleEngineCloud/wiki-doc/master/uploads/antiddos-solution-on-fe-Default%20Antiddos%20EIP.png)
+![antiddos-solution-on-fe-OCD Cleanpipe Antiddos.png](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/antiddos-solution-on-fe-Default%20Antiddos%20EIP.png?raw=true)
 
 ### Case of an attack targeting customer EIP
 ![antiddos-solution-on-fe-Default Antiddos EIP.png](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/antiddos-solution-on-fe-Default%20Antiddos%20EIP.png?raw=true)
