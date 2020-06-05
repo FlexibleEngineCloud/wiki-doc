@@ -2,7 +2,7 @@
 title: High Availability (HA) and Disaster Recovery Plan (DRP) on FE :
 description: What is HA and DRP on Flexible Engine
 published: true
-date: 2020-06-03T13:47:26.322Z
+date: 2020-06-05T09:46:36.230Z
 tags: 
 ---
 
@@ -56,4 +56,4 @@ It can be as simple as backup and restore in other region or way more complex wi
  
 
 # Conclusion : 
-HA is the technical part when DRP will permit a High Level view that help to define which HA solution to choose for each scenario
+High Availability is the technical part when DRP will allow a High Level view that help to define which HA solution to choose for each scenarios
