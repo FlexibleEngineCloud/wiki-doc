@@ -2,7 +2,7 @@
 title: Workspace
 description: 
 published: true
-date: 2020-06-05T09:46:26.773Z
+date: 2020-06-05T09:49:14.227Z
 tags: 
 ---
 
@@ -21,7 +21,7 @@ The only way to support it is to deploy 1 project per domain.
  
 
 ## Sample Architecture
-
+![Multi-AD-architecture.png](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/Multi-AD-architecture.png?raw=true)
 
 ---
 
