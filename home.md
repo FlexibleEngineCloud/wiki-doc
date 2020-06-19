@@ -2,12 +2,12 @@
 title: Home
 description: 
 published: true
-date: 2020-06-05T13:17:24.120Z
+date: 2020-06-19T13:37:40.411Z
 tags: 
 ---
 
 # Welcome On Flexible Engine Wiki
-This wiki is a collaborative place to share and contribute around Orange Businnes Services public cloud solution: [Flexible Engine](https://cloud.orange-business.com/en/offers/infrastructure-iaas/public-cloud/) 
+This wiki is a collaborative place to share and contribute around Orange Business Services public cloud solution: [Flexible Engine](https://cloud.orange-business.com/en/offers/infrastructure-iaas/public-cloud/) 
 
 You can find here some additionnal documentation, best practices but also demos regarding Flexible Engine
 
