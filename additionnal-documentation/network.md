@@ -7,7 +7,9 @@ tags:
 ---
 # VPC
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20VPC-VPC.png?raw=true)
+[FE VPC documentation](https://docs.prod-cloud-ocb.orange-business.com/vpc/index.html)
 # Direct Connect
+[FE Direct Connect documentation](https://docs.prod-cloud-ocb.orange-business.com/dc/index.html)
 ## Hosted Direct Connect Galerie Business VPN
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-DC%20Galerie%20BVPN.png?raw=true)
 ## Hosted Direct Connect Equinix Cloud Exchange
