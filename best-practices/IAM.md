@@ -62,7 +62,7 @@ Cons:
 * Users need to added manually to each domains
 * User groups/RBAC need to be created on each domains
 * Reserved instances are at domain level (company's domain B can't benefit of unused reserved instances of compagny's domain A)
-* External IDP have to be defined for each domains
+* External IDP have to be defined for each domains (An External IDP can't be attached to several FE domains)
 * Automation: custom APIs provided at Cloud Store level (creation only)
 
 ### Multi-Project architecture
