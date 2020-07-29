@@ -7,6 +7,7 @@ tags:
 ---
 # VPC
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20VPC-VPC.png?raw=true)  
+![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20VPC-Domain%20region%20AZ%20project%20VPC.png?raw=true)  
 VPC documentation: [FE Help Center](https://docs.prod-cloud-ocb.orange-business.com/vpc/index.html)
 # Direct Connect
 Direct Connect documentation: [FE Help Center](https://docs.prod-cloud-ocb.orange-business.com/dc/index.html)
