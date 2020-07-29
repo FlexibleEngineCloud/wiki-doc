@@ -6,12 +6,12 @@ date: 2020-07-29T15:56:44.813Z
 tags: network
 ---
 # VPC
+VPC online documentation: [FE Help Center](https://docs.prod-cloud-ocb.orange-business.com/vpc/index.html)
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20VPC-VPC.png?raw=true)  
 VPCs inside domains, regions and projects:  
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20VPC-Domain%20region%20AZ%20project%20VPC.png?raw=true)  
-VPC documentation: [FE Help Center](https://docs.prod-cloud-ocb.orange-business.com/vpc/index.html)
 # Direct Connect
-Direct Connect documentation: [FE Help Center](https://docs.prod-cloud-ocb.orange-business.com/dc/index.html)  
+Direct Connect online documentation: [FE Help Center](https://docs.prod-cloud-ocb.orange-business.com/dc/index.html)  
 Availibility Matrix:
 |           | Standard<br>(Dedicated ports) | Hosted<br>Galerie BVPN | Hosted<br>Equinix Cloud Exchange |
 |-----------|-------------------------------|------------------------|----------------------------------|
