@@ -2,8 +2,8 @@
 title: Network
 description: Network related additionnal documentation
 published: true
-date: 2020-07-28T15:56:44.813Z
-tags: 
+date: 2020-07-29T15:56:44.813Z
+tags: network
 ---
 # VPC
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20VPC-VPC.png?raw=true)  
@@ -11,6 +11,12 @@ tags:
 VPC documentation: [FE Help Center](https://docs.prod-cloud-ocb.orange-business.com/vpc/index.html)
 # Direct Connect
 Direct Connect documentation: [FE Help Center](https://docs.prod-cloud-ocb.orange-business.com/dc/index.html)
+Availibility Matrix:
+|           | Standard<br>(Dedicated ports) | Hosted<br>Galerie BVPN | Hosted<br>Equinix Cloud Exchange |
+|-----------|-------------------------------|------------------------|----------------------------------|
+| Paris     | Premium                       | Premium                | Legacy                           |
+| Amsterdam | Premium                       | Premium                | Premium                          |
+| Atlanta   | Legacy                        | Legacy                 | Legacy                           |
 ## Hosted Direct Connect Galerie Business VPN
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-DC%20Galerie%20BVPN.png?raw=true)  
 **Hosted Direct Connect Galerie Business VPN user guide (Premium):** [pdf](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/User%20Guide%20FE%20Direct%20Connect%20Premium%20access%20through%20OBS%20Galerie%20VPN%20(EN).pdf)  
