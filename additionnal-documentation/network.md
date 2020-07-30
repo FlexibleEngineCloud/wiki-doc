@@ -3,7 +3,7 @@ title: Network
 description: Network related additionnal documentation
 published: true
 date: 2020-07-29T15:56:44.813Z
-tags: network
+tags: network, vpc, direct connect, transit vpc, firewall appliance
 ---
 # VPC
 
