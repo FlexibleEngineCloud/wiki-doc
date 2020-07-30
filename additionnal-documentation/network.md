@@ -26,8 +26,8 @@ Availibility Matrix:
 **Business VPN offer:** [Product page](https://www.orange-business.com/fr/produits/business-vpn)  
 ## Hosted Direct Connect Equinix Cloud Exchange
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-DC%20ECX.png?raw=true)  
+**Hosted Direct Connect Equinix Cloud Exchange user guide (Legacy):** [pdf](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/User%20Guide%20for%20Direct%20Connect%20ECX%20(EN).pdf)  
 **Equinix Cloud Exchange offer:** [Product Page](https://www.equinix.fr/interconnection-services/cloud-exchange-fabric/)  
-**Hosted Direct Connect Equinix Cloud Exchange user guide (Legacy):** [pdf](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/User%20Guide%20for%20Direct%20Connect%20ECX%20(EN).pdf)
 ## Standard Direct Connect (Dedicated ports)
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-DC%20Dedicated%20ports%20bis.png?raw=true)
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-DC%20Dedicated%20ports.png?raw=true)  
