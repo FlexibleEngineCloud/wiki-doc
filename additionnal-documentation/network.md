@@ -68,3 +68,11 @@ Availibility Matrix:
 ## 2 Direct Connect 2 VPC
 
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-2%20Direct%20Connect%202%20VPC.png?raw=true)
+
+# Firewall Appliances
+
+Example DMZ network design using SLBR (Subnet Level Based Routing):  
+
+![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/NG%20FW%20on%20FE-NG%20FW%20on%20FE%20(current).png?raw=true)
+
+
