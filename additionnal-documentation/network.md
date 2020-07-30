@@ -20,7 +20,7 @@ Availibility Matrix:
 | Atlanta   | Legacy                        | Legacy                 | Legacy                           |
 ## Hosted Direct Connect Galerie Business VPN
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-DC%20Galerie%20BVPN.png?raw=true)  
-**Hosted Direct Connect Galerie Business VPN (Premium):** [USer guide](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/User%20Guide%20FE%20Direct%20Connect%20Premium%20access%20through%20OBS%20Galerie%20VPN%20(EN).pdf)  
+**Hosted Direct Connect Galerie Business VPN (Premium):** [User guide](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/User%20Guide%20FE%20Direct%20Connect%20Premium%20access%20through%20OBS%20Galerie%20VPN%20(EN).pdf)  
 **Hosted Direct Connect Galerie Business VPN (Legacy):** [User guide](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/User%20Guide%20for%20Direct%20Connect%20BVPN%20Galerie%20(EN).pdf)  
 **Business VPN Galery offer:** [Product page](https://www.orange-business.com/en/products/business-vpn-galerie)  
 **Business VPN offer:** [Product page](https://www.orange-business.com/fr/produits/business-vpn)  
