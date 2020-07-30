@@ -75,4 +75,6 @@ Example DMZ network design using SLBR (Subnet Level Based Routing):
 
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/NG%20FW%20on%20FE-NG%20FW%20on%20FE%20(current).png?raw=true)
 
+Firewall appliances catalog: [Product Page](https://cloud.orange-business.com/en/offers/infrastructure-iaas/public-cloud/appliance-catalog/)
+
 
