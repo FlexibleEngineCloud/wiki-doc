@@ -2,7 +2,7 @@
 title: Workspace
 description: 
 published: true
-date: 2020-06-05T09:46:44.138Z
+date: 2020-09-18T12:54:45.061Z
 tags: 
 ---
 
@@ -63,6 +63,17 @@ The name can be choose with using API to create desktop
 ### How to change the public image to French (Keyboard Layout and interface) for all users ?
 
 You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=https%3A%2F%2Fobs-tony-paris.oss.eu-west-0.prod-cloud-ocb.orange-business.com%2FWorkspace_langue_francaise.pdf) (only in French now)
+
+## Enable Windows Defender on private ECS image
+> If you want to use Windows Defender as main antivirus for Workspace, it is enabled by default when you use the standard public image for Workspace. But when you want to customise a image, you have to deploy a ECS with an... ECS image that do not contains Windows Defender in order to not interfere with servers apps. 
+{.is-info}
+
+### For Windows Server 2016 ECS Image
+Download the [Windows Server 2016 evaluation ISO](https://software-download.microsoft.com/download/pr/Windows_Server_2016_Datacenter_EVAL_en-us_14393_refresh.ISO)
+
+
+
+
 
 # Workspace GPU benchmark
 
