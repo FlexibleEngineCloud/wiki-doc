@@ -2,7 +2,7 @@
 title: Workspace
 description: 
 published: true
-date: 2020-09-18T14:58:31.607Z
+date: 2020-09-18T15:14:35.133Z
 tags: 
 editor: markdown
 ---
@@ -75,37 +75,37 @@ In order to re-enable it, you have to follow a specific process as Microsoft doe
 - Download the [Windows Server 2016 evaluation ISO](https://software-download.microsoft.com/download/pr/Windows_Server_2016_Datacenter_EVAL_en-us_14393_refresh.ISO) then extract all the content in C:\iso_windows (create the folder)
 
 - Create the following two folders on the root of C: drive :
-> - mountdir
-> - msu
+- `mountdir`
+- `msu`
 
 - Open a command line in admin then type :
-> dism /export-image /SourceImageFile:C:\iso_windows\sources\install.wim /SourceIndex:2 /DestinationImageFile:C:\install.wim /Compress:max /CheckIntegrity
+`dism /export-image /SourceImageFile:C:\iso_windows\sources\install.wim /SourceIndex:2 /DestinationImageFile:C:\install.wim /Compress:max /CheckIntegrity`
 
 > for the source index parameter, it is set to 2 here due to the windows desktop experience enabled (it should be if you planned to make a workspace image, if not done yet, you can do it, or set the parameter to 1
 {.is-warning}
 
 - When finished remove the 'Read Only' attribute from the extracted 'install.wim' file :
-> attrib.exe -r C:\install.wim
+`attrib.exe -r C:\install.wim`
 
-Mount the 'install.wim' files into "C:\mountdir" :
-> dism.exe /mount-wim /WimFile:C:\install.wim /index:1 /mountDir:c:\mountdir
+- Mount the 'install.wim' files into "C:\mountdir" :
+`dism.exe /mount-wim /WimFile:C:\install.wim /index:1 /mountDir:c:\mountdir`
 
-Next, download [this update package](http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/05/windows10.0-kb4103720-x64_c1fb7676d38fffae5c28b9216220c1f033ce26ac.msu) then put it in the 'C:\msu' folder and update the mounted image : 
-> Dism /Add-Package /Image:C:\mountdir\ /PackagePath:C:\MSU\windows10.0-kb4103720-x64_c1fb7676d38fffae5c28b9216220c1f033ce26ac.msu /LogPath:AddPackage.log
-
+- Next, download [this update package](http://download.windowsupdate.com/d/msdownload/update/software/updt/2018/05/windows10.0-kb4103720-x64_c1fb7676d38fffae5c28b9216220c1f033ce26ac.msu) then put it in the 'C:\msu' folder and update the mounted image : 
+`Dism /Add-Package /Image:C:\mountdir\ /PackagePath:C:\MSU\windows10.0-kb4103720-x64_c1fb7676d38fffae5c28b9216220c1f033ce26ac.msu /LogPath:AddPackage.log
+`
 This will take few minutes to proceed
 
 - After the process is finished, open 'Task Manager' and close the 'Explorer.exe' task. **(Mandatory or the next step will fail)**.
 
 - Commit the update in the offline wim image :
-> Dism /Unmount-WIM /MountDir:C:\mountdir /Commit
-
+`Dism /Unmount-WIM /MountDir:C:\mountdir /Commit
+`
 - Finally, install the Windows Defender feature :
-> Dism /Online /Enable-Feature /FeatureName:Windows-Defender /all /source:WIM:C:\install.wim:1 /LimitAccess
+`Dism /Online /Enable-Feature /FeatureName:Windows-Defender /all /source:WIM:C:\install.wim:1 /LimitAccess`
 
 - Reboot the server
-> shutdown -r -t 0
-
+`shutdown -r -t 0
+`
 # Workspace GPU benchmark
 
 ### g1.xlarge 4 vCPU 8 GB RAM 1/8 M60 1GB vRAM
