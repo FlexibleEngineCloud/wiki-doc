@@ -2,7 +2,7 @@
 title: Object Storage Service
 description: 
 published: true
-date: 2020-10-02T16:06:07.000Z
+date: 2020-10-02T16:09:33.673Z
 tags: 
 editor: markdown
 ---
@@ -50,7 +50,7 @@ Go to step 9.
 
 
 9. Fill the example response : 
-HTTP/1.1 status_code
+`HTTP/1.1 status_code
 Server: Server Name
 x-amz-request-id: request id
 x-reserved: amazon, aws and amazon web services are trademarks or registered trademarks of Amazon Technologies, Inc
@@ -58,7 +58,7 @@ x-amz-id-2: id
 Content-Type: type
 Date: date
 Content-Length: length
-
+`
 Then click on **Finish**
 On the next page, click on **Publish API**. Your API is now online.
 
