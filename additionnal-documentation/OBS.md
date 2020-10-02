@@ -2,7 +2,7 @@
 title: Object Storage Service
 description: 
 published: true
-date: 2020-10-02T16:09:33.673Z
+date: 2020-10-02T16:11:28.677Z
 tags: 
 editor: markdown
 ---
@@ -22,12 +22,12 @@ To use a custom domain name instead of the OBS Endpoint, you can simply use our 
 - 1 Architecture possible, with folders, or with root folder only
 
 ### How-to
-#### Create the custom API 
+#### Create the custom API (repeat this process for each request type and bucket)
 On the **Flexible Engine console**, click on **API Gateway** Service
 
 1. In the **API Publishing** tabs, click on **API Groups** then click on **Create API Group**
 2. Name it and click on **OK**
-3. After the creation, click on the groups you created and in the **APIs** tabs, click on **Create API**
+3. After the creation, click on the group you created and in the **APIs** tab, click on **Create API**
 4. Name it, select the API Groups you created and select **IAM** in the security section then click on **Next**
 
 > On the next page, **2 architectures are possible** :
@@ -63,7 +63,7 @@ Then click on **Finish**
 On the next page, click on **Publish API**. Your API is now online.
 
 #### Bound the external domain name to the API Group
-On the **Flexible Engine console**, click on **API Gateway** Service, then on the **API Groups**, click on the API group you created and click on the domain name tabs
+On the **Flexible Engine console**, click on **API Gateway** Service, then on the **API Groups**, click on the API group you created and click on the domain name tab
 1. In this page, you can find the subdomain name of the API Group created, go to your registrar then create a CNAME entry that redirect to this subdomain
 2. Go back on the **Flexible Engine API Gateway Console**, and now click on **Bind Domain Name** then enter your domain name
 3. After the domain is added, click on **Add SSL Certificate**
