@@ -2,7 +2,7 @@
 title: Workspace
 description: 
 published: true
-date: 2020-09-18T15:14:35.133Z
+date: 2020-11-03T10:23:42.633Z
 tags: 
 editor: markdown
 ---
@@ -57,8 +57,20 @@ In the desktop creation process from Workspace console, name of desktop will tak
 
 The name can be choose with using API to create desktop
 
+# User Experience
+## Multi Screen Management
+Workspace support multi-screen management, you can configure it in the setting of the Workspace client when you are connected on a desktop 
+> Multi-Screen management is only available on the Microsoft Windows client from the v1.8.00003
+{.is-warning}
 
-
+### 2 Monitors
+![2mon.png](/uploads/2mon.png)
+### 3 Monitors
+![3mon.png](/uploads/3mon.png)
+![3monbis.png](/uploads/3monbis.png)
+### 4 Monitors
+![4mon.png](/uploads/4mon.png)
+![4monbis.png](/uploads/4monbis.png)
 # Desktop Private Image
 ## Language
 ### How to change the public image to French (Keyboard Layout and interface) for all users ?
@@ -235,12 +247,6 @@ Yes, it uses TLS Encryption between servers and client. That why there is no sec
 
 In the creation form of the infrastructure, you can select the VPC and subnets you want to use. You also have a Workspace Security Group that you can manage to control the traffic between Workspace Desktop and other ECS 
 
- 
-
- 
-
- 
+ ![img](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/security%20diagram.png?raw=true)
 
 
-
-![img](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/security%20diagram.png?raw=true)
