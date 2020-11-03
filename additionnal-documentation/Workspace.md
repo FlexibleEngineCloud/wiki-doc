@@ -2,7 +2,7 @@
 title: Workspace
 description: 
 published: true
-date: 2020-11-03T10:23:42.633Z
+date: 2020-11-03T10:31:49.756Z
 tags: 
 editor: markdown
 ---
@@ -71,6 +71,17 @@ Workspace support multi-screen management, you can configure it in the setting o
 ### 4 Monitors
 ![4mon.png](/uploads/4mon.png)
 ![4monbis.png](/uploads/4monbis.png)
+
+### Limitations 
+- Support up to 4 monitors, must be horizontally-arranged
+- The settings will take effect after reconnection
+![limitations.png](/uploads/limitations.png)
+
+**Note 1**: Restriction by NVIDIA vGPU, 1Q only supports up to 2 monitors, refer to below link for more details: 
+https://docs.nvidia.com/grid/7.0/grid-vgpu-user-guide/index.html
+
+**Note 2**: g1.4xlarge is M60-4Q, though NVIDIA supports 4 monitors, current Workspace Version supports only 2 for GPU desktops
+
 # Desktop Private Image
 ## Language
 ### How to change the public image to French (Keyboard Layout and interface) for all users ?
