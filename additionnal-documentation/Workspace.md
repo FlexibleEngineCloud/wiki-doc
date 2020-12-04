@@ -2,7 +2,7 @@
 title: Workspace
 description: 
 published: true
-date: 2020-11-03T10:31:49.756Z
+date: 2020-12-04T15:41:06.573Z
 tags: 
 editor: markdown
 ---
@@ -86,7 +86,7 @@ https://docs.nvidia.com/grid/7.0/grid-vgpu-user-guide/index.html
 ## Language
 ### How to change the public image to French (Keyboard Layout and interface) for all users ?
 
-You can follow this [guide](https://plazza.orange.com/external-link.jspa?url=https%3A%2F%2Fobs-tony-paris.oss.eu-west-0.prod-cloud-ocb.orange-business.com%2FWorkspace_langue_francaise.pdf) (only in French now)
+You can follow this [guide](https://obs-tony-paris.oss.eu-west-0.prod-cloud-ocb.orange-business.com/Workspace_langue_francaise.pdf) (only in French now)
 
 ## Enable Windows Defender on private ECS image
 > If you want to use Windows Defender as main antivirus for Workspace, it is enabled by default when you use the standard public image for Workspace. But when you want to customise a image, you have to deploy a ECS with an... ECS image that do not contains Windows Defender in order to not interfere with servers apps.  
