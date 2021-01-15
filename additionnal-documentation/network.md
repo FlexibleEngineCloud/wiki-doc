@@ -24,7 +24,7 @@ Availibility Matrix:
 |-----------|-------------------------------|------------------------|----------------------------------|
 | Paris     | Premium                       | Premium                | Legacy                           |
 | Amsterdam | Premium                       | Premium                | Premium                          |
-| Atlanta   | Legacy                        | Legacy                 | Legacy                           |
+| Atlanta   | Premium                       | Premium                | Premium                          |
 
 ## Hosted Direct Connect Galerie Business VPN
 
