@@ -2,7 +2,7 @@
 title: Block Storage
 description: 
 published: true
-date: 2021-01-22T15:24:15.744Z
+date: 2021-01-22T15:25:20.216Z
 tags: 
 editor: markdown
 ---
