@@ -2,7 +2,7 @@
 title: Block Storage
 description: 
 published: true
-date: 2021-01-22T15:19:24.293Z
+date: 2021-01-22T15:24:15.744Z
 tags: 
 editor: markdown
 ---
@@ -22,7 +22,12 @@ Find the identifier in the console :
 
 ### On the Microsoft Windows OS
 Find the disk number in the OS : 
-- Rigth on the **"Windows"** start button then click on **"run"** and type **"powershell"**
+- Right on the **"Windows"** start button then click on **Disk management**
+- Select the targeted disk and remain the number assigned as shown below 
+![disknumber.png](/uploads/disknumber.png)
+
+Find the the **BDF** identifier :
+- Right on the **"Windows"** start button then click on **"run"** and type **"powershell"**
 - Then copy this command : `get-disk -Number 1 | fl * | findstr UniqueId`
 > Where the -Number 1 indicate that you select the disk 1. Don't forget to match with the targeted disk
 {.is-warning}
