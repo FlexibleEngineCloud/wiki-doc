@@ -2,7 +2,7 @@
 title: Block Storage
 description: 
 published: true
-date: 2021-01-22T15:13:13.577Z
+date: 2021-01-22T15:19:24.293Z
 tags: 
 editor: markdown
 ---
@@ -10,10 +10,10 @@ editor: markdown
 # Q&A
 ## How to find the mapping between EVS disk  and disk in Microsoft Windows
 This section describe how to find a common identifier between an EVS disk and the disk mounted Microsoft Windows.
-get-disk -Number 1 | fl * | findstr UniqueId
+
 
 ### On the Flexible Engine console 
-Found the identifier in the console :
+Find the identifier in the console :
 - Go in the **Elastic Cloud Server** feature
 - Click on the targeted instance
 - In the **disks** tab, select the targeted disk, then remind the **BDF** identifier as shown below
@@ -21,7 +21,7 @@ Found the identifier in the console :
 
 
 ### On the Microsoft Windows OS
-Found the disk number in the OS : 
+Find the disk number in the OS : 
 - Rigth on the **"Windows"** start button then click on **"run"** and type **"powershell"**
 - Then copy this command : `get-disk -Number 1 | fl * | findstr UniqueId`
 > Where the -Number 1 indicate that you select the disk 1. Don't forget to match with the targeted disk
