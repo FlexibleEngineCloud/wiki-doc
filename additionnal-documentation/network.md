@@ -22,7 +22,7 @@ Direct Connect online documentation: [FE Help Center](https://docs.prod-cloud-oc
 Availibility Matrix:
 |           | Standard<br>(Dedicated ports) | Hosted<br>Galerie BVPN | Hosted<br>Equinix Cloud Exchange |
 |-----------|-------------------------------|------------------------|----------------------------------|
-| Paris     | Premium                       | Premium                | Legacy                           |
+| Paris     | Premium                       | Premium                | Premium                           |
 | Amsterdam | Premium                       | Premium                | Premium                          |
 | Atlanta   | Premium                       | Premium                | Premium                          |
 
