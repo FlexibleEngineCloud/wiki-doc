@@ -52,7 +52,7 @@ Availibility Matrix:
 
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-DC%20Dedicated%20ports%20bis.png?raw=true)
 
-### Redundancy from 2 locations (PA3 + PA3)
+### Redundancy from 2 locations (PA3 + PA4)
 
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-DC%20Dedicated%20ports.png?raw=true)  
 
