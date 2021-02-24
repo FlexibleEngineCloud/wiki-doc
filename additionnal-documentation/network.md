@@ -48,14 +48,25 @@ Availibility Matrix:
 
 ## Standard Direct Connect (Dedicated ports)
 
+### Redundancy from 1 location (PA3)
+
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-DC%20Dedicated%20ports%20bis.png?raw=true)
+
+### Redundancy from 2 locations (PA3 + PA3)
+
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-DC%20Dedicated%20ports.png?raw=true)  
+
+### Single connection with multiple VLAN
+
+
 
 **Standard Direct Connect (Premium):** [User guide](https://docs.prod-cloud-ocb.orange-business.com/dc/index.html)  
 
 **Equinix Cross Connect offer:** [Product page](https://www.equinix.fr/interconnection-services/cross-connects/)  
 
 # Transit VPC
+
+## 1 Direct Connect 1 VPC
 
 ## 1 Direct Connect 2 VPC
 
