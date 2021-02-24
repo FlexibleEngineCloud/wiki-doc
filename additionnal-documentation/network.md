@@ -58,7 +58,7 @@ Availibility Matrix:
 
 ### Single connection with multiple VLAN
 
-
+![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-DC%20Dedicated%20ports%20ter.png)
 
 **Standard Direct Connect (Premium):** [User guide](https://docs.prod-cloud-ocb.orange-business.com/dc/index.html)  
 
@@ -68,7 +68,7 @@ Availibility Matrix:
 
 ## 1 Direct Connect 1 VPC
 
-
+![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-Direct%20Connect%201%20VPC.png)
 
 ## 1 Direct Connect 2 VPC
 
