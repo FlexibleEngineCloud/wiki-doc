@@ -68,6 +68,8 @@ Availibility Matrix:
 
 ## 1 Direct Connect 1 VPC
 
+
+
 ## 1 Direct Connect 2 VPC
 
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-Direct%20Connect%202%20VPC%20bis.png?raw=true)  
