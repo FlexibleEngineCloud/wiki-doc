@@ -56,10 +56,6 @@ Availibility Matrix:
 
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-DC%20Dedicated%20ports.png?raw=true)  
 
-### Single connection with multiple VLAN
-
-![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-DC%20Dedicated%20ports%20ter.png?raw=true)
-
 **Standard Direct Connect (Premium):** [User guide](https://docs.prod-cloud-ocb.orange-business.com/dc/index.html)  
 
 **Equinix Cross Connect offer:** [Product page](https://www.equinix.fr/interconnection-services/cross-connects/)  
