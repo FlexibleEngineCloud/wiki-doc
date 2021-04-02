@@ -2,7 +2,7 @@
 title: Resiliency
 description: What is HA and DRP on Flexible Engine
 published: true
-date: 2021-04-02T13:44:59.583Z
+date: 2021-04-02T14:00:53.868Z
 tags: 
 editor: markdown
 ---
