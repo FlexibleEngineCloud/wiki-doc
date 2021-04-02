@@ -2,7 +2,7 @@
 title: Resiliency
 description: What is HA and DRP on Flexible Engine
 published: true
-date: 2021-04-02T13:36:43.618Z
+date: 2021-04-02T13:44:59.583Z
 tags: 
 editor: markdown
 ---
@@ -112,19 +112,27 @@ Inter AZ resiliency for frontend
 Data are stored on Mono AZ object storage (Multi AZ Storage is in roadmap). Capable on Inter Region resiliency with cross region OBS replication feature
 ## Network
 ### VPC
+Inter AZ resiliency and subnet extended on all AZ of the region
 ### ELB
+Inter AZ resiliency 
 ### Direct Connect
+Direct connect port are sold with 2 ports on differents AZ
 ### DNS
-### NAT Gatewat
+### NAT Gateway
+Inter AZ resiliency
 ### VPC Endpoint
+Inter AZ resiliency
 
 ## Security
 ### Anti-DDoS
 ### KMS
+Inter AZ resiliency
 ### WAF
+Inter AZ resiliency
 
 ## Management & Deployment
 ### CTS
+Inter AZ resiliency
 ### Cloud Eye
 ### IAM
 ### RTS
@@ -138,9 +146,14 @@ Data are stored on Mono AZ object storage (Multi AZ Storage is in roadmap). Capa
 ### DMS for Kafka
 ### SMN
 ### API Gateway
+Inter AZ resiliency
 
 ## Database 
 ### RDS
+Service include inter AZ resiliency
+For databases instances, two modes are available for customers : 
+- Standalone. One instance on 1 AZ
+- Master/ Standby. 2 instance with master / standby architecture. Can be distributed or not on 2 AZ
 ### DDS
 ### DRS
 
