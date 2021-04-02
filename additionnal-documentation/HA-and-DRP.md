@@ -2,7 +2,7 @@
 title: Resiliency
 description: What is HA and DRP on Flexible Engine
 published: true
-date: 2021-04-02T12:57:04.207Z
+date: 2021-04-02T13:36:43.618Z
 tags: 
 editor: markdown
 ---
@@ -68,27 +68,48 @@ Intra AZ : Resiliency with multiple servers and automatic HA mechanism that reco
 {.is-info}
 
 ### BMS
+There is no HA mechanism on BMS as it is a dedicated bare metal server. In case of failure, spare BMS will be provided (as BMS can contains local storage. Please make sure that you have a backup plan for this)
+
 ### CSBS
 ### CCE
-### IMS
-### Auto Scaling
-### Dedicated Cloud
-### Dedicated Host
 
+### IMS
+Inter AZ resiliency : HA in backend. Data are stored on OBS Storage
+### Auto Scaling
+Inter AZ Resilience : HA in backend
+### Dedicated Cloud
+Depend of the subscribed design
+### Dedicated Host
+Intra AZ : HA in backend. Handled like the ECS intra AZ resiliency
 
 ## Storage
 ### CBR
 ### DES
 ### EVS
+Intra AZ : Data are distributed on 3 storage nodes
 ### Dedicated Storage Service
+Depend of the subscribed design
 ### SDRS
+Inter AZ resiliency
+Goal of this feature is to replicated EVS data from 1 AZ to other one
+
 ### VBS
+Inter AZ resiliency
 ### OBS
+2 class of object storage : 
+- Mono AZ : Inter AZ HA - Data are distributed over 3 nodes in the same AZ
+- Multi AZ : Intra AZ HA - Data are distributed over 3 AZ
+
+Capable of inter region resiliency with cross region OBS replication feature
 ### SFS 
 #### SFS Classic
+Intra AZ resiliency : Data a distributed over 3 nodes in the same AZ
 #### SFS Turbo
+Intra AZ resiliency : Data a distributed over 3 nodes in the same AZ
+Inter AZ resiliency in roadmap
 ### FAB
-
+Inter AZ resiliency for frontend
+Data are stored on Mono AZ object storage (Multi AZ Storage is in roadmap). Capable on Inter Region resiliency with cross region OBS replication feature
 ## Network
 ### VPC
 ### ELB
