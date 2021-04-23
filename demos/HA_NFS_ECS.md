@@ -2,7 +2,7 @@
 title: Multi AZ NFS HA on ECS
 description: 
 published: true
-date: 2021-04-23T15:33:43.406Z
+date: 2021-04-23T15:44:38.071Z
 tags: 
 editor: markdown
 ---
@@ -64,22 +64,31 @@ Then paste this inside :
 >     }
 >  
 >    syncer {
->       rate 100M;
+>       rate 320M;
 >    }
 >  
->         on nfs1 {
+>         on ecs-nfs-master {
 >                 device /dev/drbd0;
->                 disk /dev/sdb1;
->                 address 10.1.0.31:7788;
+>                 disk /dev/vdb;
+>                 address IP@ecs-nfs-master:7788;
 >                 meta-disk internal;
 >         }
->         on nfs2 {
+>         on ecs-nfs-slave {
 >                 device /dev/drbd0;
->                 disk /dev/sdb1;
->                 address 10.1.0.32:7788;
+>                 disk /dev/vdb;
+>                 address IP@ecs-nfs-slave:7788;
 >                 meta-disk internal;
 >         }
 > }
+
+Explainations : 
+- The rate refer to the max throuput supported by your disk. I choosed Ultra High-IO class so it's 320M
+- don't forget to adapt it to the name of your ECS (here its ecs-nfs-master and slave) + to mount path of your disk (here it /dev/vdb)
+- I choose to store the metadata directly on the disk
+
+Then initialise and start your drbd configuration 
+`drbdadm create-md r0`
+`drbdadm up r0`
 
 
 
