@@ -2,9 +2,11 @@
 title: Network
 description: Network related additionnal documentation
 published: true
-date: 2021-02-24T17:49:00.813Z
-tags: network, vpc, direct connect, transit vpc, firewall appliance
+date: 2021-02-24T17:46:06.789Z
+tags: 
+editor: undefined
 ---
+
 # VPC
 
 VPC online documentation: [FE Help Center](https://docs.prod-cloud-ocb.orange-business.com/vpc/index.html)  

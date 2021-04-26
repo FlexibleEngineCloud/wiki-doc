@@ -2,9 +2,9 @@
 title: Block Storage
 description: 
 published: true
-date: 2021-01-22T15:25:50.785Z
+date: 2021-01-22T15:25:52.553Z
 tags: 
-editor: markdown
+editor: undefined
 ---
 
 # Q&A

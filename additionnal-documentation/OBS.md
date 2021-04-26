@@ -2,9 +2,9 @@
 title: Object Storage Service
 description: 
 published: true
-date: 2020-10-02T16:11:28.677Z
+date: 2020-10-02T16:24:29.546Z
 tags: 
-editor: markdown
+editor: undefined
 ---
 
 # Front End
@@ -68,5 +68,5 @@ On the **Flexible Engine console**, click on **API Gateway** Service, then on th
 2. Go back on the **Flexible Engine API Gateway Console**, and now click on **Bind Domain Name** then enter your domain name
 3. After the domain is added, click on **Add SSL Certificate**
 
-Now you can access to your bucket through your custom domain name 
+Now you can access your bucket through your custom domain name 
 

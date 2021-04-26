@@ -2,9 +2,9 @@
 title: Workspace
 description: 
 published: true
-date: 2020-12-04T15:43:38.915Z
+date: 2020-12-04T15:50:16.595Z
 tags: 
-editor: markdown
+editor: undefined
 ---
 
 # Active Directory
