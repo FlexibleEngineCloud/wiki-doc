@@ -2,13 +2,13 @@
 title: Multi AZ NFS HA on ECS
 description: 
 published: true
-date: 2021-04-23T16:49:48.793Z
+date: 2021-04-26T07:47:14.825Z
 tags: 
 editor: markdown
 ---
 
-# Goal
-Deploy an NFS service with a multi AZ resilience onto ECS instances
+# Introduction
+The goal of this tutorial is to propose an NFS server with resiliency accross mutliple availability zone. It should support the loss of one node or one availability zone
 
 # Architecture
 ![ecs_nfs_ha_architecture.png](/uploads/ecs_nfs_ha_architecture.png)
