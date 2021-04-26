@@ -2,7 +2,7 @@
 title: Multi AZ NFS HA on ECS
 description: 
 published: true
-date: 2021-04-26T07:47:14.825Z
+date: 2021-04-26T14:12:38.239Z
 tags: 
 editor: markdown
 ---
