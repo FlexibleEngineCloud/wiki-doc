@@ -96,7 +96,7 @@ sudo mkfs.ext4 /dev/drbd0
 ### Create the data folder and configure nfs folder
 sudo mkdir /data-nfs
 
-echo "/datas-nfs 0.0.0.0/0(rw,sync,fsid=0,no_root_squash,no_subtree_check)" >> /etc/exports
+echo "/datas-nfs 0.0.0.0/0(rw,sync,fsid=0,no_root_squash,no_subtree_check)" >>/etc/exports
 
 ### heartbeat VIP and mounting point (don't forget to create VIP in FE also
 echo "ecs-nfs-maitre IPaddr::10.1.0.30/24/eth0 drbddisk::r0 Filesystem::/dev/drbd0::/data-nfs::ext4 nfs-kernel-server" >> /etc/ha.d/haresources
