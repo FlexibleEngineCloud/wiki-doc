@@ -12,14 +12,13 @@ w
 EOF
 
 ### Install packages  
-sudo apt-get update
-sudo apt-get install drbd-utils && nfs-kernel-server && heartbeat
-echo "y"
+sudo apt-get update &&-o Dpkg::Options::="--force-confdef --assume-yes install  drbd-utils && nfs-kernel-server && heartbeat
+
 
 ### Enable DRBD
 sudo modprobe drbd
 
-sudo tee -a drbd0.res > /etc/drbd.d <<EOT
+sudo tee -a drbd0.res > /etc/drbd.d/ <<EOT
 resource r0 {
 
 startup {
@@ -55,7 +54,7 @@ sudo drbdadm up r0
 
 ### Heartbeat configuration 
 
-sudo tee -a ha.cf >/etc/ha.d <<EOT
+sudo tee -a ha.cf >/etc/ha.d/ <<EOT
 mcast eth0 239.0.0.10 694 1 0
  
 warntime 4
@@ -72,7 +71,7 @@ node ecs-nfs-slave
 EOT
 
 ### Authkey creation (generate a password)
-sudo tee -a authkey >/etc/ha.d <<EOT
+sudo tee -a authkey >/etc/ha.d/ <<EOT
 auth 3
 3 md5 Pa$$word_of_your_choice
 EOT
