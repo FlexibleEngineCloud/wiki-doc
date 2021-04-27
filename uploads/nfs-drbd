@@ -12,7 +12,7 @@ w
 EOF
 
 ### Install packages  
-sudo apt-get update &&-o Dpkg::Options::="--force-confdef --assume-yes install  drbd-utils && nfs-kernel-server && heartbeat
+sudo apt-get update &&-o Dpkg::Options::="--force-confdef" --assume-yes install  drbd-utils && nfs-kernel-server && heartbeat
 
 
 ### Enable DRBD
