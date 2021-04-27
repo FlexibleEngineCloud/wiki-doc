@@ -2,7 +2,7 @@
 #!/bin/bash 
 
 ### Data Disk configuration (/dev/vdb can change)
-sudo fdisk -u -p /dev/vdb <<EOF
+sudo fdisk /dev/vdb <<EOF
 n
 p
 
@@ -80,7 +80,7 @@ EOT
 sudo chmod 600 /etc/ha.d/authkey
 
 ### Sleep for 10m only for ECS Master, mark as comment for the slave
-read -r -p "Wait 5 Minutes or press any key to continue immediately" -t 5m -n 1 -s
+read -r -p "Wait 5 Minutes or press any key to continue immediately" -t 300 -n 1 -s
 
 ### DRBD start for master instance
 drbdadm -- --overwrite-data-of-peer primary r0
@@ -89,7 +89,7 @@ drbdadm -- --overwrite-data-of-peer primary r0
 #drbdadm secondary r0
 
 ### waiting for ending of initial sync
-read -r -p "Wait 10 Minutes or press any key to continue immediately" -t 10m -n 1 -s
+read -r -p "Wait 10 Minutes or press any key to continue immediately" -t 60 -n 1 -s
 
 ### Only on the master node
 sudo mkfs.ext4 /dev/drbd0
