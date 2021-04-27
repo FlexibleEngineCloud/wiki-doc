@@ -102,7 +102,9 @@ EOT
 
 
 ### heartbeat VIP and mounting point (don't forget to create VIP in FE also
-echo "ecs-nfs-maitre IPaddr::10.1.0.30/24/eth0 drbddisk::r0 Filesystem::/dev/drbd0::/data-nfs::ext4 nfs-kernel-server" >> /etc/ha.d/haresources
+sudo tee -a haressources >/etc/ha.d/ <<EOT
+ecs-nfs-maitre IPaddr::10.1.0.30/24/eth0 drbddisk::r0 Filesystem::/dev/drbd0::/data-nfs::ext4 nfs-kernel-server
+EOT
 
 ### disable auto launch of NFS 
 sudo insserv -r nfs-kernel-server
