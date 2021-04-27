@@ -88,7 +88,7 @@ drbdadm -- --overwrite-data-of-peer primary r0
 #drbdadm secondary r0
 
 ### waiting for ending of initial sync
-read -r -p "Wait 10 Minutes or press any key to continue immediately" -t 600 -n 1 -s
+read -r -p "Wait 10 Minutes or press any key to continue immediately" -t 500 -n 1 -s
 
 ### Only on the master node
 sudo mkfs.ext4 /dev/drbd0
@@ -111,4 +111,3 @@ sudo insserv -r nfs-kernel-server
 
 ###Start Heartbeat
 sudo /etc/init.d/heatbeat start
-
