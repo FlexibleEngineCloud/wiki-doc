@@ -2,9 +2,9 @@
 title: Multi AZ NFS HA on ECS
 description: 
 published: true
-date: 2021-04-26T14:12:40.345Z
+date: 2021-04-28T15:15:00.996Z
 tags: 
-editor: undefined
+editor: markdown
 ---
 
 # Introduction
@@ -90,5 +90,9 @@ Then initialise and start your drbd configuration
 `drbdadm create-md r0`
 `drbdadm up r0`
 
+### Private Image creation
+Now shutdown the master instance then, in the ECS console, click on more then **Manage Image / Disk** and **Create Image**
+![nfs_ha_create_image.png](/uploads/nfs_ha_create_image.png)
 
+Then create a **Full ECS Image**
 
