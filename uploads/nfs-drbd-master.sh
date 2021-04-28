@@ -17,7 +17,7 @@ sudo apt-get update &&-o Dpkg::Options::="--force-confdef" --assume-yes install 
 
 ### Enable DRBD
 sudo modprobe drbd
-
+sudo cat /etc/drbd.d/drbd0.res
 sudo tee -a drbd0.res > /etc/drbd.d/drbd0.res <<EOT
 resource r0 {
 
@@ -53,8 +53,8 @@ sudo drbdadm create-md r0
 sudo drbdadm up r0
 
 ### Heartbeat configuration 
-
-sudo tee -a ha.cf >/etc/ha.d/ha.cf <<EOT
+sudo cat /etc/ha.d/ha.cf
+sudo tee -a ha.cf > /etc/ha.d/ha.cf <<EOT
 mcast eth0 239.0.0.10 694 1 0
  
 warntime 4
@@ -71,7 +71,8 @@ node ecs-nfs-slave
 EOT
 
 ### Authkey creation (generate a password)
-sudo tee -a authkey >/etc/ha.d/authkey <<EOT
+sudo cat /etc/ha.d/authkey
+sudo tee -a authkey > /etc/ha.d/authkey <<EOT
 auth 3
 3 md5 Pa$$word_of_your_choice
 EOT
@@ -99,13 +100,14 @@ EOF
 ### Create the data folder and configure nfs folder
 sudo mkdir /data-nfs
 
-sudo tee -a exports >/etc/exports <<EOT
+sudo tee -a exports > /etc/exports <<EOT
 /data-nfs 0.0.0.0/0(rw,sync,fsid=0,no_root_squash,no_subtree_check)
 EOT
 
 
 ### heartbeat VIP and mounting point (don't forget to create VIP in FE also
-sudo tee -a haresources >/etc/ha.d/haresources <<EOT
+sudo cat /etc/ha.d/haresources
+sudo tee -a haresources > /etc/ha.d/haresources <<EOT
 ecs-nfs-maitre IPaddr::10.1.0.30/24/eth0 drbddisk::r0 Filesystem::/dev/drbd0::/data-nfs::ext4 nfs-kernel-server
 EOT
 
