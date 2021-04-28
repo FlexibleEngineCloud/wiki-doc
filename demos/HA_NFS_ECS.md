@@ -1,8 +1,8 @@
 ---
-title: Multi AZ NFS HA on ECS
+title: NFS Server cross AZ resilient
 description: 
 published: true
-date: 2021-04-28T17:42:33.719Z
+date: 2021-04-28T17:43:23.822Z
 tags: 
 editor: markdown
 ---
