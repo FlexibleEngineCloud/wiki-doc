@@ -2,7 +2,7 @@
 title: NFS Server cross AZ resilient
 description: 
 published: true
-date: 2021-04-28T17:43:23.822Z
+date: 2021-04-28T17:47:37.607Z
 tags: 
 editor: markdown
 ---
@@ -30,7 +30,7 @@ Deploy 2 ECS with at least following specs :
 > On the following guide, each command have to be typed on both master & slave ECS unless specific instructions are told
 {.is-warning}
 
-## Master ECS configuration
+## Template ECS configuration
 ### Format the data disk
 List the disks to select the data disk previously created
 
@@ -117,6 +117,7 @@ After image is created, in the ECS console create a new ECS based on this privat
 > Don't forget to select the deployment on a different AZ than the master + select a C3 family flavor
 {.is-warning}
 
+## Master & Slave ECS configuration
 ### VIP Creation 
 Now you have the 2 ECS created, you have to create a VIP for Heartbeat in the Flexible Engine Console
 - Go in the **VPC Console**, then in the **Subnet** select the subnet where the 2 ECS are, then click on **Assign Virtual IP** click on manual assignation and note the VIP you set
