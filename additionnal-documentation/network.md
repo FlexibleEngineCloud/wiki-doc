@@ -20,6 +20,7 @@ VPCs inside domains, regions and projects:
 # Direct Connect
 
 Direct Connect Product description: [Cloud Store](https://cloud.orange-business.com/en/offers/infrastructure-iaas/public-cloud/features/direct-connect/)
+
 Direct Connect online documentation: [FE Help Center](https://docs.prod-cloud-ocb.orange-business.com/dc/index.html)  
 
 Availibility Matrix:
