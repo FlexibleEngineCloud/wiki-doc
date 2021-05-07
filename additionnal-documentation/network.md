@@ -11,7 +11,7 @@ editor: undefined
 
 VPC online documentation: [FE Help Center](https://docs.prod-cloud-ocb.orange-business.com/vpc/index.html)  
 
-![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20VPC-VPC.png?raw=true)  
+![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20VPC-Domain%20region%20AZ%20project%20VPC%202.png?raw=true)  
 
 VPCs inside domains, regions and projects:  
 
