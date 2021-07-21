@@ -15,9 +15,11 @@ VPC online documentation: [FE Help Center](https://docs.prod-cloud-ocb.orange-bu
 
 VPCs inside domains, regions and projects:  
 
-![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20VPC-Domain%20region%20AZ%20project%20VPC.png?raw=true)  
+![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20VPC-Domain%20region%20AZ%20project%20VPC%202.png?raw=true)  
 
 # Direct Connect
+
+Direct Connect Product description: [Cloud Store](https://cloud.orange-business.com/en/offers/infrastructure-iaas/public-cloud/features/direct-connect/)
 
 Direct Connect online documentation: [FE Help Center](https://docs.prod-cloud-ocb.orange-business.com/dc/index.html)  
 
@@ -32,7 +34,7 @@ Availibility Matrix:
 
 ![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/FE%20Direct%20Connect-DC%20Galerie%20BVPN.png?raw=true)  
 
-**Hosted Direct Connect Galerie Business VPN (Premium):** [User guide](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/User%20Guide%20FE%20Direct%20Connect%20Premium%20access%20through%20OBS%20Galerie%20VPN%20(EN).pdf)  
+**Hosted Direct Connect Galerie Business VPN (Premium):** [User guide](https://cloud.orange-business.com/wp-content/uploads/2020/10/flexible-engine-direct-connect-user-guideEN.pdf)  
 
 **Hosted Direct Connect Galerie Business VPN (Legacy):** [User guide](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/User%20Guide%20for%20Direct%20Connect%20BVPN%20Galerie%20(EN).pdf)  
 
@@ -86,8 +88,8 @@ Availibility Matrix:
 
 # Firewall Appliances
 
-Example DMZ network design using SLBR (Subnet Level Based Routing):  
+Example DMZ network design using virtual firewall and custom route table:  
 
-![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/NG%20FW%20on%20FE-NG%20FW%20on%20FE%20(current).png?raw=true)
+![](https://github.com/FlexibleEngineCloud/wiki-doc/blob/master/uploads/CPE%20FE-BVPN%20%2B%20FW%20%2B%20DMZ%20%2B%20IPsec%20%2B%20VPN%20SSL.png?raw=true)
 
 **Firewall appliances catalog:** [Product Page](https://cloud.orange-business.com/en/offers/infrastructure-iaas/public-cloud/appliance-catalog/)

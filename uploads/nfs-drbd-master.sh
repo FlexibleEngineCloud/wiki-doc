@@ -99,7 +99,8 @@ EOF
 
 ### Create the data folder and configure nfs folder
 sudo mkdir /data-nfs
-
+sudo mount /dev/drbd0 /data-nfs
+df -h
 sudo tee -a exports > /etc/exports <<EOT
 /data-nfs 0.0.0.0/0(rw,sync,fsid=0,no_root_squash,no_subtree_check)
 EOT

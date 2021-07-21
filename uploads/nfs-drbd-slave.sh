@@ -33,13 +33,13 @@ syncer {
 rate 320M;
 }
 
-    on ecs-nfs-maitre {
+    on ecs-nfs-master {
             device /dev/drbd0;
             disk /dev/vdb;
             address 192.168.0.50:7788;
             meta-disk internal;
     }
-    on ecs-nfs-esclave {
+    on ecs-nfs-slave {
             device /dev/drbd0;
             disk /dev/vdb;
             address 192.168.0.51:7788;
@@ -99,6 +99,8 @@ read -r -p "Wait 10 Minutes or press any key to continue immediately" -t 500 -n 
 
 ### Create the data folder and configure nfs folder
 sudo mkdir /data-nfs
+sudo mount /dev/drbd0 /data-nfs
+df -h
 
 sudo tee -a exports > /etc/exports <<EOT
 /data-nfs 0.0.0.0/0(rw,sync,fsid=0,no_root_squash,no_subtree_check)
