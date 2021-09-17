@@ -70,7 +70,7 @@ editor: Vincent E
 ### RDS
 - native backup function
 ### ECS
-- CBR Cloud application consistent
+- CBR Cloud application consistent backup
 - FAB
 - Native database backup tool (Oracle Rman, MySQL Dump, PostgreSQL dump)
 
