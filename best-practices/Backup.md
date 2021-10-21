@@ -2,9 +2,9 @@
 title: Backup
 description: Backup Best pratices on Flexible Engine
 published: true
-date: 2021-09-17T17:46:06.789Z
-tags: draft
-editor: Vincent E
+date: 2021-10-20T16:02:42.037Z
+tags: 
+editor: undefined
 ---
 
 # Why to backup ?

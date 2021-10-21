@@ -2,9 +2,9 @@
 title: NFS Server cross AZ resilient
 description: 
 published: true
-date: 2021-04-28T17:47:37.607Z
+date: 2021-04-28T17:47:39.313Z
 tags: 
-editor: markdown
+editor: undefined
 ---
 
 # Introduction
