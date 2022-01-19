@@ -60,7 +60,7 @@ Pros:
 * Quotas can be defined for each domains
 
 Cons:
-* Users need to added manually to each domains
+* Users need to be added manually to each domains
 * User groups/RBAC need to be created on each domains
 * Reserved instances are at domain level (company's domain B can't benefit of unused reserved instances of compagny's domain A)
 * External IDP have to be defined for each domains (An External IDP can't be attached to several FE domains)
@@ -73,5 +73,4 @@ Pros:
 * Can use transversal services/features (like CTS of each projects with the same OBS bucket as target for traces)
 
 Cons:
-* No detailed billing per project (at the moment)
 * Isolation for some services is a bit complex (ex: OBS is expose at Domain level and can’t be spited by project)
