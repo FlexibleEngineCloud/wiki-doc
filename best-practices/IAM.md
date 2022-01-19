@@ -15,7 +15,7 @@ Domains are the highest level abstraction for resources and users in an OpenStac
 
 - Projects (Openstack & Flexible Engine) / Tenant (deprecated):
 
-Projects are the second highest abstraction in OpenStack environment. Projects can directly contain user groups or users. Project can also contain resources. Note that, one project can be assigned to at most one domain. 
+Projects are the second highest abstraction level in OpenStack environment. Projects can directly contain user groups or users. Project can also contain resources. Note that, one project can be assigned to at most one domain. 
 
 - User groups (Openstack & Flexible Engine) :
 
